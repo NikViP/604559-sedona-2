@@ -26,36 +26,36 @@
 
 <main>
   <div class="billboard">
-    <img class="billboard__image--page-form" src="http://placehold.it/150x100" width="" height=""
+    <img class="billboard__image billboard__image--page-form" src="http://placehold.it/150x100" width="" height=""
          alt="view of Sedona">
     <!--todo Ссылку на картинку и её размеры (билборд на page-form и page-photo один, а на page-index другой!)-->
   </div>
 
-  <h2 class="caption caption--form">оставьте свой отзыв</h2>
+  <h2 class="questionnaire__caption">оставьте свой отзыв</h2>
   <p class="">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
     достопримечательностях</p>
 
-  <form class="forms" action="https://echo.htmlacademy.ru" method="post">
-    <h2 class="form--caption caption">представьтесь:</h2>
+  <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="form__caption">представьтесь:</h2>
     <fieldset class="form__name">
-      <label class="form__name--label" for="first-name">имя*:</label>
-      <input class="form__name--input" type="text" name="first-name" id="first-name" required>
-      <label class="form__name--label" for="surname">фамилия*:</label>
-      <input class="form__name--input" type="text" name="surname" id="surname" required>
-      <label class="form__name--label" for="patronymic">отчество:</label>
-      <input class="form__name--input" type="text" name="patronymic" id="patronymic">
+      <label class="form__label form__label--name" for="first-name">имя*:</label>
+      <input class="form__input form__input--name" type="text" name="first-name" id="first-name" required>
+      <label class="form__label form__label--name" for="surname">фамилия*:</label>
+      <input class="form__input form__input--name" type="text" name="surname" id="surname" required>
+      <label class="form__label form__label--name" for="patronymic">отчество:</label>
+      <input class="form__input form__input--name" type="text" name="patronymic" id="patronymic">
     </fieldset>
 
-    <h2 class="form--caption caption">контактная информация:</h2>
+    <h2 class="form__caption">контактная информация:</h2>
     <fieldset class="form__contacts">
-      <label class="form__contacts--label" for="phone">контактный телефон*:</label>
-      <input class="form__contacts--input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-      <label class="form__contacts--label" for="e-mail">электронная почта*:</label>
-      <input class="form__contacts--input" type="text" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+      <label class="form__label form__label--contacts" for="phone">контактный телефон*:</label>
+      <input class="form__input  form__input--contacts" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+      <label class="form__label form__label--contacts" for="e-mail">электронная почта*:</label>
+      <input class="form__input form__input--contacts" type="text" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
     </fieldset>
 
-    <h2 class="form--caption caption">ваше общее впечатление:</h2>
-    <fieldset class="form__impression">
+    <h2 class="form__caption">ваше общее впечатление:</h2>
+    <fieldset class="form__radio-input">
       <input type="radio" name="question-one" id="question-one" checked>
       <label for="question-one">Скорее положительное</label>
       <input type="radio" name="question-one" id="question-two">
@@ -65,8 +65,8 @@
 
     </fieldset>
 
-    <h2 class="form--caption caption">посещенные достопримечательности:</h2>
-    <fieldset class="form__landmark">
+    <h2 class="form__caption">посещенные достопримечательности:</h2>
+    <fieldset class="form__checkbox-input">
       <input type="checkbox" name="bridge" id="bridge-field" checked>
       <label for="bridge-field">Мост Дьявола</label>
       <input type="checkbox" name="mountain" id="mountain-field" checked>
@@ -78,8 +78,8 @@
 
     </fieldset>
 
-    <h2 class="form--caption caption">опишите свои эмоции:</h2>
-    <fieldset class="form__emotions">
+    <h2 class="form__caption">опишите свои эмоции:</h2>
+    <fieldset class="form__textarea">
       <textarea name="emotions" id="emotions" rows="10">Опишите подробно все свои восторги</textarea>
       <!--todo Число строк нужно ли? Или высотой блока разметить?-->
     </fieldset>
