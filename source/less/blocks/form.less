@@ -1,8 +1,49 @@
-.questionnaire {
-  width: auto;
-  height: 200px;
+@media (max-width: 768px) {
 
-  &p {
-    width: 280px;
+  .questionnaire {
+    display: block;
+    height: 200px;
+    box-shadow: 0 0 10px #de2525;
+
+    & p {
+      width: 280px;
+    }
+  }
+
+  .form__name {
+    height: 305px;
+    outline: 1px solid #de2525;
+  }
+
+  .form__contacts {
+    height: 285px;
+    outline: 1px solid #de2525;
+  }
+
+  .form__radio {
+    height: 285px;
+    outline: 1px solid #de2525;
+  }
+
+  .form__checkbox {
+    height: 410px;
+    outline: 1px solid #de2525;
+  }
+
+  .form__textarea {
+    height: 220px;
+    outline: 1px solid #de2525;
+  }
+
+  .form__caption {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .form__submit button {
+    height: 58px;
+    outline: 1px solid #de2525;
   }
 }

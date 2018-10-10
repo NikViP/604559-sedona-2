@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper__general">
   <header>
     <nav class="navigation">
       <ul class="navigation__list">
@@ -28,7 +28,7 @@
       <img class="billboard__image--page-index" src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="view of Sedona">
       <!--todo Ссылку на картинку и её размеры (билборд на page-form и page-photo один, а на page-index другой!)-->
     </div>
-
+    <div class="wrapper__internal"
     <section class="questionnaire">
       <h2 class="questionnaire__caption">оставьте свой отзыв</h2>
       <p class="">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
@@ -36,9 +36,8 @@
     </section>
 
     <form class="form__questionnaire" action="https://echo.htmlacademy.ru" method="post">
-
       <fieldset class="form__name">
-        <legend class="form__caption">представьтесь:</legend>
+        <h3 class="form__caption">представьтесь:</h3>
         <label class="form__label form__label--name" for="first-name">имя*:</label>
         <input class="form__input form__input--name" type="text" name="first-name" id="first-name" required>
         <label class="form__label form__label--name" for="surname">фамилия*:</label>
@@ -47,27 +46,26 @@
         <input class="form__input form__input--name" type="text" name="patronymic" id="patronymic">
       </fieldset>
 
-      <h2 class="form__caption">контактная информация:</h2>
       <fieldset class="form__contacts">
+        <h3 class="form__caption">контактная информация:</h3>
         <label class="form__label form__label--contacts" for="phone">контактный телефон*:</label>
         <input class="form__input  form__input--contacts" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
         <label class="form__label form__label--contacts" for="e-mail">электронная почта*:</label>
         <input class="form__input form__input--contacts" type="text" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
       </fieldset>
 
-      <h2 class="form__caption">ваше общее впечатление:</h2>
-      <fieldset class="form__radio-input">
+      <fieldset class="form__radio">
+        <h3 class="form__caption">ваше общее впечатление:</h3>
         <input type="radio" name="question-one" id="question-one" checked>
         <label for="question-one">Скорее положительное</label>
         <input type="radio" name="question-one" id="question-two">
         <label for="question-two">Скорее отрицательное</label>
         <input type="radio" name="question-one" id="question-three">
         <label for="question-three">Затрудняюсь ответить</label>
-
       </fieldset>
 
-      <h2 class="form__caption">посещенные достопримечательности:</h2>
-      <fieldset class="form__checkbox-input">
+      <fieldset class="form__checkbox">
+        <h3 class="form__caption">посещенные достопримечательности:</h3>
         <input type="checkbox" name="bridge" id="bridge-field" checked>
         <label for="bridge-field">Мост Дьявола</label>
         <input type="checkbox" name="mountain" id="mountain-field" checked>
@@ -76,11 +74,10 @@
         <label for="slide-field">Слайд-парк</label>
         <input type="checkbox" name="red-rocks" id="red-rocks-field">
         <label for="red-rocks-field">Красные скалы</label>
-
       </fieldset>
 
-      <h2 class="form__caption">опишите свои эмоции:</h2>
       <fieldset class="form__textarea">
+        <h3 class="form__caption">опишите свои эмоции:</h3>
         <textarea name="emotions" id="emotions" rows="10">Опишите подробно все свои восторги</textarea>
         <!--todo Число строк нужно ли? Или высотой блока разметить?-->
       </fieldset>
@@ -113,6 +110,7 @@
     <a class="footer__copyright-link link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     <!--todo Здесь логотип Академии SVG-->
   </footer>
+</div>
 </div>
 </body>
 </html>
