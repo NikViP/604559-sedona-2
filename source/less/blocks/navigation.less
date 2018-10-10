@@ -1,14 +1,27 @@
 .navigation__list {
   .lists-reset();
   display: flex;
-  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .navigation__list {
+    display: block;
+  }
 }
 
 .navigation__item {
   display: block;
-  width: 320px;
+  width: auto;
   height: 55px;
   background-color: #81b3d2;
   border-bottom: solid 1px #678fa8;
   border-top: solid 1px #9ac2db;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
 }
