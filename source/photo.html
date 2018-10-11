@@ -4,94 +4,93 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy_2: Седона (Николай Пушкарев)</title>
-  <!--todo Подключить шрифты локально-->
-  <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">-->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="wrapper__general">
+    <header>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link link" href="#">главная</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">фото и видео</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">форма отзыва</a></li>
+          <li class="navigation__item"><a class="navigation__link link" href="#">html academy</a></li>
+        </ul>
+      </nav>
+      <!--todo Ссылку на картинку-логотип и её размеры-->
+      <a class="link" href="#"><img class="navigation__logo navigation__logo--page-form" src="http://placehold.it/30x60"
+                                    width="" height="" alt="City of Sedona"></a>
+    </header>
+    <div class="wrapper__internal">
+      <main>
+        <div class="billboard">
+          <img class="billboard__image" src="http://placehold.it/150x100" width="" height="" alt="view of Sedona">
+          <!--todo Ссылку на картинку и её размеры (билборд на page-form и page-photo один, а на page-index другой!)-->
+        </div>
 
-<header>
-  <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item"><a class="navigation__link link" href="#">главная</a></li>
-      <li class="navigation__item"><a class="navigation__link link" href="#">фото и видео</a></li>
-      <li class="navigation__item"><a class="navigation__link link" href="#">форма отзыва</a></li>
-      <li class="navigation__item"><a class="navigation__link link" href="#">html academy</a></li>
-    </ul>
-  </nav>
-  <!--todo Ссылку на картинку-логотип и её размеры-->
-  <a class="link" href="#"><img class="navigation__logo navigation__logo--page-form" src="http://placehold.it/30x60"
-                                width="" height="" alt="City of Sedona"></a>
-</header>
+        <h2 class="page-photo--caption caption">фото и видео</h2>
+        <p>не можете решиться на путешествие из за курса? фотографии помогут вам забыть о политике и экономике</p>
 
-<main>
-  <div class="billboard">
-    <img class="billboard__image--page-photo" src="http://placehold.it/150x100" width="" height="" alt="view of Sedona">
-    <!--todo Ссылку на картинку и её размеры (билборд на page-form и page-photo один, а на page-index другой!)-->
+        <div class="photo">
+          <img class="photo__img" src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
+          <span class="photo__signature">неродные просторы</span>
+          <span class="photo__author">Автор фото: Борис</span>
+          <span class="photo__like">1350</span>
+        </div>
+
+        <div class="photo">
+          <img class="photo__img" src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
+          <span class="photo__signature">местная растительность</span>
+          <span class="photo__author">Автор фото: Сергей</span>
+          <span class="photo__like">143</span>
+        </div>
+
+        <div class="photo">
+          <img class="photo__img" src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
+          <span class="photo__signature">дорога на север</span>
+          <span class="photo__author">Автор фото: Сергей</span>
+          <span class="photo__like">96</span>
+        </div>
+
+        <div class="photo">
+          <img class="photo__img" src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
+          <span class="photo__signature">мост дъявола</span>
+          <span class="photo__author">Автор фото: Антон</span>
+          <span class="photo__like">254</span>
+        </div>
+
+        <h2 class="photo__caption">всё ещё сомневаетесь?</h2>
+        <p> смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video width="320" height="200" controls>
+          <source src="">
+        </video>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__hashtag">#visitsedona</div>
+        <ul class="footer__social-list">
+          <li>
+            <a class="footer__social-link link" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">разработано</span>
+        <a class="footer__copyright-link link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        <!--todo Здесь логотип Академии SVG-->
+      </footer>
+    </div>
   </div>
-
-  <h2 class="page-photo--caption caption">фото и видео</h2>
-  <p>не можете решиться на путешествие из за курса? фотографии помогут вам забыть о политике и экономике</p>
-
-  <div class="photo">
-  <img class="photo__img"src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
-  <span class="photo__signature">неродные просторы</span>
-  <span class="photo__author">Автор фото: Борис</span>
-  <span class="photo__like">1350</span>
-  </div>
-
-  <div class="photo">
-    <img class="photo__img"src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
-    <span class="photo__signature">местная растительность</span>
-    <span class="photo__author">Автор фото: Сергей</span>
-    <span class="photo__like">143</span>
-  </div>
-
-  <div class="photo">
-    <img class="photo__img"src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
-    <span class="photo__signature">дорога на север</span>
-    <span class="photo__author">Автор фото: Сергей</span>
-    <span class="photo__like">96</span>
-  </div>
-
-  <div class="photo">
-    <img class="photo__img"src="http://placehold.it/280x280" width="280" height="280" alt="Photos of Sedona">
-    <span class="photo__signature">мост дъявола</span>
-    <span class="photo__author">Автор фото: Антон</span>
-    <span class="photo__like">254</span>
-  </div>
-
-  <h2 class="photo__caption">всё ещё сомневаетесь?</h2>
-  <p> смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-  <video width ="320" height ="200" controls>
-    <source src ="">
-  </video>
-</main>
-
-<footer class="footer">
-  <div class="footer__hashtag">#visitsedona</div>
-  <ul class="footer__social-list">
-    <li>
-      <a class="footer__social-link link" href="#">
-        <span class="visually-hidden">Твиттер</span>
-      </a>
-    </li>
-    <li>
-      <a class="footer__social-link link" href="#">
-        <span class="visually-hidden">Фейсбук</span>
-      </a>
-    </li>
-    <li>
-      <a class="footer__social-link link" href="#">
-        <span class="visually-hidden">Ютуб</span>
-      </a>
-    </li>
-  </ul>
-  <span class="footer__copyright">разработано</span>
-  <a class="footer__copyright-link link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-  <!--todo Здесь логотип Академии SVG-->
-</footer>
-
 </body>
 </html>

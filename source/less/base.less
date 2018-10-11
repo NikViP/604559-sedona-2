@@ -17,6 +17,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: "PT Sans", "Arial sans-serif";
   background-color: #ffffff;
   font-size: 14px;
@@ -24,6 +25,14 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .link {
@@ -38,19 +47,29 @@ fieldset {
   width: auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .wrapper__general {
-    width: 320px;
-    margin: 0 auto;
+    width: 648px;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper__general {
+    width: 1200px;
+    padding: 0 40px;
   }
 }
 
 .wrapper__internal {
-  padding: ;
+  min-width: 280px;
+  padding: 0 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .wrapper__internal {
-    padding: 0 20px;
+    width: 648px;
+    padding: 0 60px;
   }
 }
+
