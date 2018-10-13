@@ -44,13 +44,16 @@ fieldset {
 }
 
 .wrapper__general {
-  width: auto;
+  min-width: 320px;
+  max-width: 1200px;
+  outline: 1px solid #1bd235;
 }
 
 @media (min-width: 768px) {
   .wrapper__general {
     width: 648px;
     padding: 0 60px;
+    outline: 1px solid #1bd235;
   }
 }
 
@@ -58,18 +61,21 @@ fieldset {
   .wrapper__general {
     width: 1200px;
     padding: 0 40px;
+    outline: 1px solid #1bd235;
   }
 }
 
 .wrapper__internal {
   min-width: 280px;
   padding: 0 20px;
+  outline: 1px solid #1337d2;
 }
 
 @media (min-width: 768px) {
   .wrapper__internal {
     width: 648px;
     padding: 0 60px;
+    outline: 1px solid #1337d2;
   }
 }
 
