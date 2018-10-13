@@ -1,11 +1,13 @@
 .reasons__list {
   .lists-reset();
+  min-width: 320px;
 }
 
 .reasons__title {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   height: 240px;
   outline: 1px solid #de2525;
   & h3 {
@@ -26,16 +28,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 1px solid #de2525;
+  &:nth-last-child(-n+3) {
+    background-color: #eeeeee;
+  }
+  &:nth-last-child(-n+3) {
+    border-top: solid 1px #d6d6d6;
+  }
+  & h3 {
+    font-size: 21px;
+    line-height: 10px;
+  }
   & p {
-    width: 280px;
+    width: 300px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     outline: 1px solid #de2525;
   }
 }
 
-.reasons-img {
+.reasons__item--first,
+.reasons__item--second {
+   background-color: #81b3d2;
+   color: #ffffff;
+}
+
+.reasons__item--first {
+  & > .reasons__text {
+    height: 210px;
+  }
+}
+
+.reasons__item--second {
+  & > .reasons__text {
+    height: 190px;
+  }
+}
+
+.reasons__img {
   width: 320px;
   height: 260px;
   background-color: #81b3d2;
