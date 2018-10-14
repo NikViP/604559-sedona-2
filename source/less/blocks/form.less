@@ -1,38 +1,45 @@
 @media (max-width: 768px) {
 
   .questionnaire {
-    display: block;
-    height: 200px;
-    box-shadow: 0 0 10px #de2525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+
+    & h2 {
+      margin: 0;
+    }
 
     & p {
       width: 280px;
+      font-size: 14;
+      line-height: 24px;
+      outline: 1px solid #de2525;
     }
+  }
+
+  fieldset {
+    border-top: solid 1px #e5e5e5;;
   }
 
   .form__name {
     height: 305px;
-    outline: 1px solid #de2525;
   }
 
   .form__contacts {
     height: 285px;
-    outline: 1px solid #de2525;
   }
 
   .form__radio {
     height: 285px;
-    outline: 1px solid #de2525;
   }
 
   .form__checkbox {
     height: 410px;
-    outline: 1px solid #de2525;
   }
 
   .form__textarea {
     height: 220px;
-    outline: 1px solid #de2525;
   }
 
   .form__caption {
