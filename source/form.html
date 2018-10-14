@@ -33,12 +33,20 @@
         <form class="form__questionnaire" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__name">
             <h3 class="form__caption">представьтесь:</h3>
-            <label class="form__label form__label--name" for="first-name">имя*:</label>
-            <input class="form__input form__input--name" type="text" name="first-name" id="first-name" required>
-            <label class="form__label form__label--name" for="surname">фамилия*:</label>
-            <input class="form__input form__input--name" type="text" name="surname" id="surname" required>
-            <label class="form__label form__label--name" for="patronymic">отчество:</label>
-            <input class="form__input form__input--name" type="text" name="patronymic" id="patronymic">
+            <div class="form__name--wrapper">
+              <div class="name__field">
+                <label class="form__label form__label--name" for="first-name">имя*:</label>
+                <input class="form__input form__input--name" type="text" name="first-name" id="first-name" required>
+              </div>
+              <div class="name__field">
+                <label class="form__label form__label--name" for="surname">фамилия*:</label>
+                <input class="form__input form__input--name" type="text" name="surname" id="surname" required>
+              </div>
+              <div class="name__field">
+                <label class="form__label form__label--name" for="patronymic">отчество:</label>
+                <input class="form__input form__input--name" type="text" name="patronymic" id="patronymic">
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="form__contacts">
