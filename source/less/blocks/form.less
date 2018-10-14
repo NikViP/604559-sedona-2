@@ -1,18 +1,25 @@
 @media (max-width: 768px) {
 
-  .questionnaire {
+  .questionnaire,
+  .form__name,
+  .form__contacts,
+  .form__radio,
+  .form__checkbox {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 230px;
+  }
 
+  .questionnaire {
+    align-items: center;
+    height: 200px;
+    outline: 1px solid #de2525;
     & h2 {
       margin: 0;
+      margin-top: 40px;
     }
-
     & p {
       width: 280px;
-      font-size: 14;
+      font-size: 14px;
       line-height: 24px;
       outline: 1px solid #de2525;
     }
@@ -23,10 +30,12 @@
   }
 
   .form__name {
+    flex-wrap: wrap;
     height: 305px;
   }
 
   .form__contacts {
+    flex-wrap: wrap;
     height: 285px;
   }
 
@@ -47,6 +56,11 @@
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+  }
+
+  .form__label--name {
+    font-size: 14px;
+    line-height: 26px;
   }
 
   .form__submit button {
