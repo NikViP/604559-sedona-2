@@ -1,21 +1,38 @@
 @media (max-width: 768px) {
 
-  .questionnaire {
-    display: block;
-    height: 200px;
-    box-shadow: 0 0 10px #de2525;
+  .questionnaire,
+  .form__name,
+  .form__contacts,
+  .form__radio,
+  .form__checkbox {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .questionnaire {
+    align-items: center;
+    height: 200px;
+    outline: 1px solid #de2525;
+    & h2 {
+      margin: 0;
+      margin-top: 40px;
+    }
     & p {
       width: 280px;
+      font-size: 14px;
+      line-height: 24px;
+      outline: 1px solid #de2525;
     }
   }
 
   .form__name {
+    flex-wrap: wrap;
     height: 305px;
     outline: 1px solid #de2525;
   }
 
   .form__contacts {
+    flex-wrap: wrap;
     height: 285px;
     outline: 1px solid #de2525;
   }
@@ -40,6 +57,11 @@
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+  }
+
+  .form__label--name {
+    font-size: 14px;
+    line-height: 26px;
   }
 
   .form__submit button {
