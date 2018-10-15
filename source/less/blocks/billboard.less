@@ -2,28 +2,20 @@
   display: block;
   width: 768px;
   height: 389px;
-  background-size: auto;
-  background-color: #81b3d2;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-color: rgb(153, 155, 153);
+  background-image: url("../../img/text-sedona-index.svg"), url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -220px 0;
-  outline: 1px solid #ded31c;
-}
-
-.billboard__image--form {
-  width: 768px;
-  height: 158px;
-  background-position: -220px 0;
-  margin-bottom: 40px;
+  background-size: 282px 214px, 768px 389px;
+  background-position: center center, 0;
+  outline: 1px solid #d21308;
 }
 
 @media (min-width: 768px) {
   .billboard__image {
     width: 768px;
     height: 518px;
-    background-position: 0;
-    background-color: #81b3d2;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/text-sedona-index.svg"), url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 460px 350px, 768px 518px;
   }
 }
 
@@ -31,16 +23,8 @@
   .billboard__image {
     width: 1200px;
     height: 518px;
-    background-position: 0;
-    background-color: #81b3d2;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
-  }
-
-  .billboard__text {
-    width: 460px;
-    height: 350px;
-    margin: 0;
-    margin-top: 76px;
+    background-image: url("../../img/text-sedona-index.svg"), url("../../img/bg-back-desktop@1x.jpg");
+    background-size: 460px 350px, 1200px 518px;
   }
 }
 
