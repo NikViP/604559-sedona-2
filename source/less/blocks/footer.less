@@ -53,25 +53,33 @@
   background-color: #669ec0;
 }
 
-.footer__social-link:active path {
-  fill: #88b6d1;
-  background-color: #5496bd;
-  color: #88b6d1;
+.footer__social-link:active {
+  & path {
+    fill: #88b6d1;
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
-.footer__social-list .footer__social-link:active {
+.footer__social-link:active {
   box-shadow: none;
 }
 
-.footer-copyright span {
-  margin-right: 4px;
-  margin-bottom: 3px;
+.footer-copyright {
+  & span {
+    margin-right: 4px;
+    margin-bottom: 3px;
+  }
 }
 
-.footer__copyright-link:hover path {
-  fill: rgb(129, 179, 210);
+.footer__copyright-link:hover {
+  & path {
+    fill: rgb(129, 179, 210);
+  }
 }
 
-.footer__copyright-link:active path {
-  fill: rgba(0, 0, 0, 0.302);
+.footer__copyright-link:active {
+  & path {
+    fill: rgba(0, 0, 0, 0.302);
+  }
 }

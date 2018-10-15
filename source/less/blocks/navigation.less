@@ -41,20 +41,28 @@
     /*height: 56px; /*для центрирования в IE по вертикали (проверить!)*/
   }
 
-  .navigation-list li {
-    min-width: 100px;
+  .navigation-list {
+    & li {
+      min-width: 100px;
+    }
   }
 
-  .navigation-list li:nth-child(-n+2) {
-    text-align: left;
+  .navigation-list {
+    & li:nth-child(-n+2) {
+      text-align: left;
+    }
   }
 
-  .navigation-list li:nth-child(2) {
-    margin-right: 230px;
+  .navigation-list {
+    & li:nth-child(2) {
+      margin-right: 230px;
+    }
   }
 
-  .navigation-list li:nth-last-child(-n+2) {
-    text-align: right;
+  .navigation-list {
+    & li:nth-last-child(-n+2) {
+      text-align: right;
+    }
   }
 
   .navigation__link {
