@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 240px;
   outline: 1px solid #de2525;
   & h3 {
@@ -68,4 +67,27 @@
   width: 320px;
   height: 260px;
   background-color: #81b3d2;
+}
+
+@media (min-width: 768px) {
+  .reasons__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 205px;
+    outline: 1px solid #de2525;
+    & h3 {
+      width: 450px;
+      font-size: 21px;
+      line-height: 26px;
+      outline: 1px solid #de2525;
+    }
+    & p {
+      width: 500px;
+      font-size: 14px;
+      line-height: 26px;
+      color: #333333;
+      outline: 1px solid #de2525;
+    }
+  }
 }

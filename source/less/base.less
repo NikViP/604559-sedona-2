@@ -39,20 +39,24 @@ body {
   .links-reset();
 }
 
+header {
+  position: relative;
+}
+
 fieldset {
   border: none;
 }
 
 .wrapper__general {
   min-width: 320px;
-  width: 1200px;
-  margin: auto;
   outline: 1px solid #1bd235;
 }
 
 @media (min-width: 768px) {
   .wrapper__general {
-    width: 648px;
+    width: 768px;
+    margin: 0 auto;
+    background-color: #ffffff;
     outline: 1px solid #1bd235;
   }
 }
@@ -60,24 +64,9 @@ fieldset {
 @media (min-width: 1200px) {
   .wrapper__general {
     width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 -10px 20px 10px #b8b8b8;
     outline: 1px solid #1bd235;
   }
-}
-
-.wrapper__internal {
-  min-width: 280px;
-  padding: 0 20px;
-  outline: 1px solid #1337d2;
-}
-
-@media (min-width: 768px) {
-  .wrapper__internal {
-    width: 648px;
-    padding: 0 60px;
-    outline: 1px solid #1337d2;
-  }
-}
-
-header {
-  position: relative;
 }
