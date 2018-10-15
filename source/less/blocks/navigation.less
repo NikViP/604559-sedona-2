@@ -1,36 +1,72 @@
-.navigation__list {
-  .lists-reset();
-  display: flex;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navigation__list {
-    margin: 0;
-    padding: 0;
+    .lists-reset();
+  }
+
+  .navigation__link {
+    .links-reset();
     display: block;
+    width: auto;
+    height: 55px;
+    background-color: #81b3d2;
+    border-bottom: solid 1px #678fa8;
+    border-top: solid 1px #9ac2db;
+    font-size: 18px;
+    line-height: 55px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .navigation__logo {
+    position: absolute;
+    left: 109px;
+    width: 102px;
+    height: 83px;
   }
 }
 
-.navigation__item {
-  display: block;
-  width: auto;
-  height: 55px;
-  background-color: #81b3d2;
-  border-bottom: solid 1px #678fa8;
-  border-top: solid 1px #9ac2db;
+@media (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 56px;
+    /*height: 56px; /*для центрирования в IE по вертикали (проверить!)*/
+    list-style: none;
+  }
+
+  .navigation__link {
+    display: block;
+    width: auto;
+    height: 55px;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 55px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .navigation__link,
+  .navigation__link:visited {
+    color: rgb(0, 0, 0);
+  }
+
+  .navigation__link:hover {
+    color: rgb(129, 179, 210);
+  }
+
+  .navigation__link:active {
+    color: rgba(0, 0, 0, 0.302);
+  }
+
+  /*.navigation__link:focus {
+    color: rgb(118, 99, 87);
+  }*/
 }
 
-.navigation__link {
-  .links-reset();
-  font-size: 18px;
-  line-height: 40px;
-  color: #ffffff;
-  font-weight: bold;
-}
+@media (min-width: 1200px) {
 
-.navigation__logo {
-  position: absolute;
-  left: 109px;
-  width: 102px;
-  height: 83px;
 }
