@@ -1,4 +1,5 @@
 .invitation {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,5 +15,23 @@
     font-size: 14px;
     line-height: 24px;
     outline: 1px solid #de2525;
+  }
+}
+
+@media (min-width: 1200px) {
+  .invitation {
+    height: 240px;
+    outline: 1px solid #de2525;
+    & h3 {
+      font-size: 30px;
+      line-height: 26px;
+      outline: 1px solid #de2525;
+    }
+    & p {
+      width: 450px;
+      font-size: 14px;
+      line-height: 24px;
+      outline: 1px solid #de2525;
+    }
   }
 }

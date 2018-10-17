@@ -39,14 +39,13 @@
 .reasons__item--first,
 .reasons__item--second {
   color: #ffffff;
-  outline: 1px solid #de2525;
 }
 
 .reasons__item--first {
   & > .reasons__text {
     background-color: #81b3d2;
     height: 210px;
-    padding-top: 65px;
+    /*padding-top: 65px;*/
   }
 }
 
@@ -58,7 +57,6 @@
 
 .reasons__img {
   background-color: #999B99;
-  outline: 1px solid #de2525;
 }
 
 .reasons__item {
@@ -78,11 +76,13 @@
     outline: 1px solid #de2525;
   }
 }
+
 .reasons__caption {
   width: 160px;
   font-size: 18px;
   line-height: 26px;
 }
+
 @media (min-width: 768px) {
   .reasons__title {
     display: flex;
@@ -108,25 +108,26 @@
     display: none;
   }
 }
+
 @media (min-width: 1200px) {
   .reasons__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 205px;
-    outline: 1px solid #de2525;
+    outline: 1px solid #1bd235;
     & h3 {
       width: 450px;
       font-size: 21px;
       line-height: 26px;
-      outline: 1px solid #de2525;
+      outline: 1px solid #1bd235;
     }
     & p {
       width: 500px;
       font-size: 14px;
       line-height: 26px;
       color: #333333;
-      outline: 1px solid #de2525;
+      outline: 1px solid #1bd235;
     }
   }
   .reasons__five-reasons::after {
@@ -138,34 +139,46 @@
     margin: 0;
     padding: 0;
     width: 1200px;
-    height: 256px;
   }
   .reasons__item--first,
   .reasons__item--second {
     display: flex;
+    height: 256px;
     background-color: #81b3d2;
-    color: #ffffff;
   }
   .reasons__item--first {
     flex-direction: row;
   }
+  .reasons__item--first .reasons__text {
+    & p {
+      width: 270px;
+      outline: 1px solid #de2525;
+    }
+  }
   .reasons__item--second {
     flex-direction: row-reverse;
   }
+  .reasons__item--second .reasons__text {
+    & p {
+      width: 240px;
+      outline: 1px solid #1820d2;
+    }
+}
   .reasons__caption {
     width: 160px;
     font-size: 21px;
     line-height: 26px;
   }
   .reasons__text {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
   }
   .reasons__img {
-    display: block;
-    flex-grow: 2;
-    background-image: url("../../img/main-city-desktop@1x.jpg");
+    background-color: #999B99;
   }
-  /*.reasons__item {
+  .reasons__item {
     display: flex;
     margin: 0;
     padding: 0;
@@ -180,10 +193,8 @@
     width: 1200px;
     height: 330px;
   }
-
   .recommendation__item {
     margin: 0;
     padding: 0;
-  }*/
+  }
 }
-
