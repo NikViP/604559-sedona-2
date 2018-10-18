@@ -1,77 +1,78 @@
-@media (max-width: 768px) {
+.questionnaire,
+.form__contacts,
+.form__radio,
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+}
 
-  .questionnaire,
-  .form__contacts,
-  .form__radio,
-  .form__checkbox {
-    display: flex;
-    flex-direction: column;
+.questionnaire {
+  align-items: center;
+  height: 200px;
+  outline: 1px solid #de2525;
+  & h2 {
+    margin: 0;
+    margin-top: 40px;
   }
-
-  .questionnaire {
-    align-items: center;
-    height: 200px;
-    outline: 1px solid #de2525;
-    & h2 {
-      margin: 0;
-      margin-top: 40px;
-    }
-    & p {
-      width: 280px;
-      font-size: 14px;
-      line-height: 24px;
-      outline: 1px solid #de2525;
-    }
-  }
-
-  .form__name,
-  .form__contacts,
-  .form__radio,
-  .form__checkbox,
-  .form__textarea {
-    border: none;
-    border-top: solid 1px #e5e5e5;;
-  }
-
-  .form__name--wrapper {
+  & p {
     width: 280px;
-    height: 305px;
-    outline: 1px solid #1337d2;
-  }
-
-  .form__contacts {
-    flex-wrap: wrap;
-    height: 285px;
-  }
-
-  .form__radio {
-    height: 285px;
-  }
-
-  .form__checkbox {
-    height: 410px;
-  }
-
-  .form__textarea {
-    height: 220px;
-  }
-
-  .form__caption {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    text-align: center;
-  }
-
-  .form__label--name {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
+    outline: 1px solid #de2525;
   }
+}
 
-  .form__submit {
-    & button {
-      height: 58px;
-      outline: 1px solid #de2525;
-    }
+.form__name,
+.form__contacts,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+  border: none;
+  border-top: solid 1px #e5e5e5;;
+}
+
+.form__name--wrapper {
+  width: 280px;
+  height: 305px;
+  outline: 1px solid #1337d2;
+}
+
+.form__contacts {
+  flex-wrap: wrap;
+  height: 285px;
+}
+
+.form__radio {
+  height: 285px;
+}
+
+.form__checkbox {
+  height: 410px;
+}
+
+.form__textarea {
+  height: 220px;
+}
+
+.form__caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form__label--name {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__submit {
+  & button {
+    height: 58px;
+    outline: 1px solid #de2525;
   }
+}
+
+@media (min-width: @tablet-width) {
+
 }
