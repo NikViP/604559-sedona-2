@@ -8,7 +8,9 @@
 </head>
 
 <body>
+
   <div class="wrapper">
+
     <header>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -20,49 +22,65 @@
       </nav>
       <a class="link" href="#"><img class="navigation__logo" src="http://placehold.it/30x60" width="" height="" alt="City of Sedona"></a>
     </header>
-      <main>
-        <img class="billboard__image billboard__image--photo" src="" width="" height="" alt="view of Sedona">
-        <section class="photo__promo">
-          <h2>фото и видео</h2>
-          <p>не можете решиться на путешествие из за курса? фотографии помогут вам забыть о политике и экономике</p>
-        </section>
 
-        <div class="photo">
-          <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Photos of Sedona">
+    <main>
+      <img class="billboard__image billboard__image--photo" src="" width="" height="" alt="view of Sedona">
+      <section class="photo__header">
+        <h2>фото и видео</h2>
+        <p>не можете решиться на путешествие из за курса? фотографии помогут вам забыть о политике и экономике</p>
+      </section>
+
+      <section class="photo photo--first">
+        <img class="photo__img" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Photos of Sedona">
+        <!--picture>
+          <source media="(min-width:1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+          <source media="(min-width:768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+          <source media="(min-width:320px)" srcset="img/photo-sunset-mobile@1x.jpg">
+        </picture-->
+        <div class="photo__content photo__content--first">
           <span class="photo__signature">неродные просторы</span>
           <span class="photo__author">Автор фото: Борис</span>
           <span class="photo__like">1350</span>
         </div>
+      </section>
 
-        <div class="photo">
-          <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Photos of Sedona">
-          <span class="photo__signature">местная растительность</span>
-          <span class="photo__author">Автор фото: Сергей</span>
-          <span class="photo__like">143</span>
-        </div>
+      <div class="photo__wrapper">
+        <section class="photo">
+          <img class="photo__img" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Photos of Sedona">
+          <div class="photo__content">
+            <span class="photo__signature">местная растительность</span>
+            <span class="photo__author">Автор фото: Сергей</span>
+            <span class="photo__like">143</span>
+          </div>
+        </section>
 
-        <div class="photo">
-          <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Photos of Sedona">
-          <span class="photo__signature">дорога на север</span>
-          <span class="photo__author">Автор фото: Петр</span>
-          <span class="photo__like">96</span>
-        </div>
+        <section class="photo">
+          <img class="photo__img" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Photos of Sedona">
+          <div class="photo__content">
+            <span class="photo__signature">дорога на север</span>
+            <span class="photo__author">Автор фото: Петр</span>
+            <span class="photo__like">96</span>
+          </div>
+        </section>
 
-        <div class="photo">
-          <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Photos of Sedona">
-          <span class="photo__signature">мост дъявола</span>
-          <span class="photo__author">Автор фото: Антон</span>
-          <span class="photo__like">254</span>
-        </div>
+        <section class="photo">
+          <img class="photo__img" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Photos of Sedona">
+          <div class="photo__content">
+            <span class="photo__signature">мост дъявола</span>
+            <span class="photo__author">Автор фото: Антон</span>
+            <span class="photo__like">254</span>
+          </div>
+        </section>
+      </div>
 
-        <!--section class="photo__promo">
-          <h2>все еще сомневаетесь?</h2>
-          <p> смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video width="320" height="200" controls>
-            <source src="">
-          </video>
-        </section-->
-      </main>
+      <section class="photo__footer">
+        <h2>все еще сомневаетесь?</h2>
+        <p> смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video controls>
+          <source src="">
+        </video>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__hashtag">#visitsedona</div>
