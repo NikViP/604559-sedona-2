@@ -1,14 +1,48 @@
+.photo__header,
+.photo {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  & h2 {
+    margin: 0;
+    padding-bottom: 35px;
+    width: 140px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  & p {
+    margin: 0;
+    width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 .photo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.photo__img {
+  width: 280px;
+  height: 280px;
 }
 
 .photo__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 280px;
-  height: 112px;
+  margin: 0;
 }
 
 .photo__signature,
@@ -19,23 +53,6 @@
 
 .photo__author {
   text-transform: none;
-}
-
-.photo__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
-  & h2 {
-    width: 140px;
-    font-size: 18px;
-    line-height: 26px;
-  }
-  & p {
-    width: 270px;
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 
 .photo__footer {
@@ -58,26 +75,48 @@
 .photo__video {
   width: 320px;
   height: 200px;
+  margin-bottom: 80px;
+  outline: 1px solid #1820d2;
 }
 
 @media (min-width: @tablet-width) {
+  .photo__header,
+  .photo {
+    border-bottom: none;
+  }
 
+  .photo {
+    padding: 0;
+  }
+
+  .photo__img--first {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo__img {
+    width: 324px;
+    height: 267px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .photo__header,
+  .photo {
+    border-bottom: none;
+  }
+
   .photo__header {
     width: 1200px;
     margin-top: 110px;
     & h2 {
       width: 240px;
-      margin: 0;
       padding-bottom: 35px;
       font-size: 30px;
       line-height: 26px;
     }
     & p {
       width: 440px;
-      margin: 0;
       padding-bottom: 72px;
       font-size: 14px;
       line-height: 24px;
@@ -110,15 +149,20 @@
     line-height: 0.2;
   }
 
-  .photo--first {
+  .photo__img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo__img--first {
     width: 1200px;
     height: 400px;
   }
+
   .photo__wrapper {
     display: flex;
     flex-direction: row;
     width: 1200px;
-    height: 267px;
   }
 
   .photo__footer {
