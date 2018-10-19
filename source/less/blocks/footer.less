@@ -1,7 +1,7 @@
 .footer {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  height: 240px;
+  width: 151px;
 }
 
 .footer__hashtag {
@@ -14,19 +14,26 @@
 .footer__social-list {
   .lists-reset();
   display: flex;
-  width: 152px;
-  height: 48px;
-  margin: 40px auto;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding: 0;
 }
 
 .footer__copyright {
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 6px;
+  & span {
+    margin-right: 10px;
+  }
 }
 
 .footer__social-link {
-  width: 48px;
+  width: 46px;
   height: 48px;
-  margin: auto;
   background-color: #81b3d2;
   display: flex;
   align-items: center;
@@ -66,48 +73,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 120px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer__social-list,
-  .footer__hashtag,
-  .footer__copyright {
-    width: 33%;
-    justify-content: center;
-  }
-
-  .footer__hashtag {
-    padding-bottom: 15px;
-    padding-left: 2px;
-    font-size: 21px;
-    line-height: 1.1;
-    font-weight: 700;
-    text-transform: uppercase;
+    width: 648px;
   }
 
   .footer__social-list {
-    .lists-reset();
-    display: flex;
-    padding: 0;
-    padding-bottom: 12px;
-    padding-right: 6px;
+    width: 151px;
   }
 
   .footer__copyright {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 960px;
+  }
+
+  .footer__social-list {
+    width: 151px;
   }
 
   .footer__social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5px;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -127,13 +118,6 @@
 
   .footer__social-link:active {
     box-shadow: none;
-  }
-
-  .footer-copyright {
-    & span {
-      margin-right: 4px;
-      margin-bottom: 3px;
-    }
   }
 
   .footer__copyright-link:hover {
