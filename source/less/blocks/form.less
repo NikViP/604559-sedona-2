@@ -36,6 +36,11 @@
 }
 
 .form__input {
+  border: none;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   text-transform: none;
 }
@@ -51,20 +56,10 @@
   }
 }
 
-.form__item {
+.form__name .form__item {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.form__input {
-  border: none;
-  height: 58px;
-  margin: 10px 0;
-  background-color: #f2f2f2;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .form__contacts {
@@ -80,6 +75,11 @@
 .form__label--contacts {
   width: 280px;
   padding-left: 20px;
+}
+
+.form__input--contacts,
+.form__input--name {
+  height: 58px;
 }
 
 .form__radio {
@@ -108,29 +108,35 @@
 .form__label--radio::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -50px;
   border-radius: 50%;
 }
 
 .form__label--radio::before {
   width: 28px;
   height: 28px;
+  top: -6px;
+  left: -50px;
   background-color: #f2f2f2;
-  border: 1px solid #000000;
+  border: 1px solid #678fa8;
 }
 
 .form__label--radio::after {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  left: -41px;
   background-color: #000000;
 }
 
 .form__checkbox {
-  width: 210px;
+  width: 280px;
   margin: 0 auto;
   padding: 0;
   outline: 1px solid #b70909;
+}
+
+.form__checkbox .form__item {
+  margin-bottom: 20px;
 }
 
 .form__input--checkbox {
@@ -138,8 +144,38 @@
 }
 
 .form__label--checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 20px auto;
+  margin-left: 80px;
   font-weight: bold;
   text-transform: none;
+}
+
+.form__label--checkbox::before,
+.form__label--checkbox::after {
+  content: "";
+  position: absolute;
+}
+
+.form__label--checkbox::before {
+  width: 55px;
+  height: 55px;
+  top: -20px;
+  left: -80px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 1px solid #b70909;
+}
+
+.form__label--checkbox::after {
+  width: 24px;
+  height: 16px;
+  background-image: url("../../img/icon-tick.svg");
+  top: 0;
+  left: -62px;
 }
 
 .form__textarea {
@@ -154,7 +190,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-
+  outline: 1px solid #debb24;
 }
 
 .form__caption {
