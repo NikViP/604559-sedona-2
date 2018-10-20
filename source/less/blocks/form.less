@@ -1,24 +1,25 @@
 .questionnaire,
+.form__name,
 .form__contacts,
 .form__radio,
 .form__checkbox {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .questionnaire {
   align-items: center;
-  height: 200px;
-  outline: 1px solid #de2525;
+  min-width: 320px;
   & h2 {
-    margin: 0;
-    margin-top: 40px;
+    margin: 40px auto;
   }
   & p {
+    margin: 0;
+    margin-bottom: 20px;
     width: 280px;
     font-size: 14px;
     line-height: 24px;
-    outline: 1px solid #de2525;
   }
 }
 
@@ -27,27 +28,41 @@
 .form__radio,
 .form__checkbox,
 .form__textarea {
-  border: none;
-  border-top: solid 1px #e5e5e5;;
+  .lists-reset();
+  border-top: solid 1px #e5e5e5;
 }
 
-.form__name--wrapper {
+.form__name {
   width: 280px;
-  height: 305px;
+  margin: 0 auto;
+  padding: 0;
   outline: 1px solid #1337d2;
+  & h3 {
+    margin: 20px 0;
+  }
+}
+
+.form__item {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.form__label--name {
+
+}
+
+.form__input--name {
+  background-color: #f2f2f2;
 }
 
 .form__contacts {
-  flex-wrap: wrap;
-  height: 285px;
 }
 
 .form__radio {
-  height: 285px;
 }
 
 .form__checkbox {
-  height: 410px;
 }
 
 .form__textarea {
@@ -67,11 +82,11 @@
 }
 
 .form__submit {
-  & button {
-    height: 58px;
-    outline: 1px solid #de2525;
-  }
+  width: 280px;
+  height: 58px;
+  margin-bottom: 75px;
 }
+
 
 @media (min-width: @tablet-width) {
 
