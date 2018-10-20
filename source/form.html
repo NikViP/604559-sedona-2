@@ -33,8 +33,8 @@
           <h3 class="form__caption">представьтесь:</h3>
           <ul class="form__name">
             <li class="form__item">
-                <label class="form__label form__label--name" for="first-name">имя*:</label>
-                <input class="form__input form__input--name" type="text" id="first-name" placeholder="Петр" required>
+              <label class="form__label form__label--name" for="first-name">имя*:</label>
+              <input class="form__input form__input--name" type="text" id="first-name" placeholder="Петр" required>
             </li>
             <li class="form__item">
               <label class="form__label form__label--name" for="surname">фамилия*:</label>
@@ -50,7 +50,7 @@
           <ul class="form__contacts">
             <li>
               <label class="form__label form__label--contacts" for="phone">контактный телефон*:</label>
-              <input class="form__input  form__input--contacts" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+              <input class="form__input form__input--contacts" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
             </li>
             <li>
               <label class="form__label form__label--contacts" for="e-mail">электронная почта*:</label>
@@ -61,36 +61,36 @@
           <h3 class="form__caption">ваше общее впечатление:</h3>
           <ul class="form__radio">
             <li>
-              <input type="radio" name="question-one" id="question-one" checked>
-              <label for="question-one">Скорее положительное</label>
+              <input class="form__input form__input--radio" type="radio" name="question-one" id="question-one" checked>
+              <label class="form__label form__label--radio" for="question-one">Скорее положительное</label>
             </li>
             <li>
-              <input type="radio" name="question-one" id="question-two">
-              <label for="question-two">Скорее отрицательное</label>
+              <input class="form__input form__input--radio" type="radio" name="question-two" id="question-two">
+              <label class="form__label form__label--radio" for="question-two">Скорее отрицательное</label>
             </li>
             <li>
-              <input type="radio" name="question-one" id="question-three">
-              <label for="question-three">Затрудняюсь ответить</label>
+              <input class="form__input form__input--radio" type="radio" name="question-three" id="question-three">
+              <label class="form__label form__label--radio" for="question-three">Затрудняюсь ответить</label>
             </li>
           </ul>
 
           <h3 class="form__caption">посещенные достопримечательности:</h3>
           <ul class="form__checkbox">
             <li>
-              <input type="checkbox" name="bridge" id="bridge-field" checked>
-              <label for="bridge-field">Мост Дьявола</label>
+              <input class="form__input form__input--checkbox" type="checkbox" name="bridge" id="bridge-field" checked>
+              <label class="form__label form__label--checkbox" for="bridge-field">Мост Дьявола</label>
             </li>
             <li>
-              <input type="checkbox" name="mountain" id="mountain-field" checked>
-              <label for="mountain-field">Гора-Колокол</label>
+              <input class="form__input form__input--checkbox" type="checkbox" name="mountain" id="mountain-field" checked>
+              <label class="form__label form__label--checkbox" for="mountain-field">Гора-Колокол</label>
             </li>
             <li>
-              <input type="checkbox" name="slide" id="slide-field" checked>
-              <label for="slide-field">Слайд-парк</label>
+              <input class="form__input form__input--checkbox" type="checkbox" name="slide" id="slide-field" checked>
+              <label class="form__label form__label--checkbox" for="slide-field">Слайд-парк</label>
             </li>
             <li>
-              <input type="checkbox" name="red-rocks" id="red-rocks-field">
-              <label for="red-rocks-field">Красные скалы</label>
+              <input class="form__input form__input--checkbox" type="checkbox" name="red-rocks" id="red-rocks-field">
+              <label class="form__label form__label--checkbox" for="red-rocks-field">Красные скалы</label>
             </li>
           </ul>
 
@@ -98,7 +98,7 @@
           <textarea class="form__textarea" name="emotions" id="emotions" rows="10">Опишите подробно все свои восторги</textarea>
             <!--todo Число строк нужно ли? Или высотой блока разметить?-->
 
-          <button class="form__submit button" type="submit" value="отправить отзыв"></button>
+          <button class="form__submit button" type="submit" value="отправить отзыв">отправить отзыв</button>
         </form>
       </main>
 
