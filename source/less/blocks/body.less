@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   min-width: 320px;
   font-family: "PT Sans", "Arial sans-serif";
@@ -12,10 +12,14 @@ body {
 }
 
 @media (min-width: @tablet-width) {
-  width: 768px;
+  body {
+    width: 768px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  width: 1200px;
-  box-shadow: 0 -10px 20px 10px #b8b8b8;
+  body {
+    width: 1200px;
+    box-shadow: 0 -10px 20px 10px #b8b8b8;
+  }
 }

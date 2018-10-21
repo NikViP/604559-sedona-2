@@ -1,3 +1,7 @@
+.navigation {
+  position: relative;
+}
+
 .navigation__list {
   .lists-reset();
 }
@@ -21,7 +25,8 @@
   top: 231px;
   left: calc(50% - 51px);
   width: 102px;
-  height: 83px;
+  height: 84px;
+  background-image: url("../../img/logo-sedona-mobile.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -99,7 +104,8 @@
     top: 0;
     left: calc(50% - 51px);
     width: 102px;
-    height: 83px;
+    height: 84px;
+    background-image: url("../../img/logo-sedona-tablet.svg");
   }
 }
 
@@ -107,5 +113,14 @@
   .navigation {
     width: 1040px;
     outline: 1px solid #de2525;
+  }
+
+  .navigation__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 94px);
+    width: 187px;
+    height: 96px;
+    background-image: url("../../img/logo-sedona-desktop.svg");
   }
 }
