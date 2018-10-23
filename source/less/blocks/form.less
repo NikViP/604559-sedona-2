@@ -1,3 +1,8 @@
+.wrapper {
+  min-width: 320px;
+  outline: 1px solid #b7a42c;
+}
+
 .questionnaire,
 .form__questionnaire {
   min-width: 280px;
@@ -204,6 +209,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .wrapper {
+    width: 648px;
+  }
+
   .questionnaire,
   .form__questionnaire {
     display: flex;
@@ -233,9 +242,17 @@
     line-height: 24px;
     outline: 1px solid #b70909;
   }
+
+  .form__impression {
+    order: -1;
+    }
 }
 
 @media (min-width: @desktop-width) {
+  .wrapper {
+    width: 960px;
+  }
+
   .questionnaire,
   .form__questionnaire {
     width: 100%;
