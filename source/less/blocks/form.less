@@ -1,7 +1,7 @@
-.wrapper {
+/*.wrapper {
   min-width: 320px;
   outline: 1px solid #b7a42c;
-}
+}*/
 
 .questionnaire,
 .form__questionnaire {
@@ -21,55 +21,65 @@
   width: 280px;
   font-size: 14px;
   line-height: 24px;
-  outline: 1px solid #b70909;
+  /*outline: 1px solid #b70909;*/
 }
 
-.list__name,
-.list__contacts,
-.list__impression,
-.list__landmarks,
-.list__emotions {
-  .lists-reset();
-  border-top: solid 1px #e5e5e5;
-}
-
-.form__input {
-  border: none;
-  margin: 10px 0;
-  background-color: #f2f2f2;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: none;
+.questionnaire,
+.form__name,
+.form__contacts,
+.form__impression,
+.form__landmarks,
+ {
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .form__name {
-  width: 280px;
   margin: 0 auto;
-  margin-bottom: 35px;
-  outline: 1px solid #13d23d;
+  /*margin-bottom: 35px;*/
+  /*outline: 1px solid #13d23d;*/
   & .form__caption {
     margin: 20px 0;
   }
 }
 
-.list__name .form__item {
+.list__name {
+  width: 280px;
+
+
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+}
+
+/*.list__name .form__item {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}*/
+
+.form__input {
+  flex-grow: 1;
+  border: none;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  font-size: 8px;
+  line-height: 6px;
+  font-weight: bold;
+  text-transform: none;
 }
 
 .form__contacts {
   justify-content: flex-start;
-  width: 280px;
   margin: 0 auto;
   margin-top: 25px;
-  outline: 1px solid #1337d2;
+  /*outline: 1px solid #1337d2;*/
 }
 
 .form__input--contacts,
 .form__label--contacts {
-  width: 280px;
+  /*idth: 280px;*/
   padding-left: 20px;
 }
 
@@ -80,10 +90,9 @@
 }
 
 .form__impression {
-  width: 280px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid #d21308;
+  /*outline: 1px solid #d21308;*/
 }
 
 .form__input--impression {
@@ -115,7 +124,7 @@
   top: -6px;
   left: -50px;
   background-color: #f2f2f2;
-  border: 1px solid #678fa8;
+  /*border: 1px solid #678fa8;*/
 }
 
 .form__label--impression::after {
@@ -127,10 +136,9 @@
 }
 
 .form__landmarks {
-  width: 280px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid #b70909;
+  /*outline: 1px solid #b70909;*/
 }
 
 .form__landmarks .form__item {
@@ -165,7 +173,7 @@
   margin-bottom: 20px;
   background-color: #f2f2f2;
   border-radius: 5px;
-  border: 1px solid #b70909;
+  /*border: 1px solid #b70909;*/
 }
 
 .form__label--landmarks::after {
@@ -240,7 +248,7 @@
     width: 440px;
     font-size: 14px;
     line-height: 24px;
-    outline: 1px solid #b70909;
+    /*outline: 1px solid #b70909;*/
   }
 
   .form__impression {
