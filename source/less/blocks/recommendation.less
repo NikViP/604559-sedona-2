@@ -1,0 +1,111 @@
+.reasons__recommendation {
+  min-width: 320px;
+}
+
+.recommendation__list {
+  .lists-reset();
+  width: 280px;
+  margin: 0 auto;
+  outline: 1px solid #de2525;
+}
+
+.recommendation__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  & .recommendation__caption {
+    font-size: 18px;
+    line-height: 26px;
+    outline: 1px solid #de2525;
+  }
+  & .recommendation__text {
+    width: 220px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+.recommendation__icon--housing,
+.recommendation__icon--gift,
+.recommendation__icon--burger {
+  position: absolute;
+  display: inline-block;
+  color: #81b3d2;
+  fill: currentColor;
+}
+
+.recommendation__icon--housing {
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 37px;
+}
+
+.recommendation__icon--gift {
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 38px;
+}
+
+.recommendation__icon--burger {
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 35px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .recommendation__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 768px;
+    height: 330px;
+    & .recommendation__item:nth-last-child(2) {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendation__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    & .recommendation__item:nth-last-child(2) {
+      order: 1;
+    }
+  }
+  .recommendation__item {
+    text-align: center;
+    padding: 0;
+    & h3 {
+      margin: 0 auto;
+      font-size: 21px;
+      line-height: 26px;
+      outline: 1px solid #de2525;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .recommendation__housing {
+    width: 260px;
+    outline: 1px solid #debb24;
+  }
+  .recommendation__food {
+    width: 290px;
+    outline: 1px solid #1820d2;
+  }
+  .recommendation__gifts {
+    width: 220px;
+    outline: 1px solid #13d23d;
+    background-color: #81b3d2;
+  }
+}

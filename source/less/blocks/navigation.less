@@ -1,0 +1,126 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__list {
+  .lists-reset();
+}
+
+.navigation__link {
+  .links-reset();
+  display: block;
+  width: auto;
+  height: 56px;
+  background-color: #81b3d2;
+  border-bottom: solid 1px #678fa8;
+  border-top: solid 1px #9ac2db;
+  font-size: 18px;
+  line-height: 56px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navigation__logo {
+  position: absolute;
+  top: 231px;
+  left: calc(50% - 51px);
+  width: 102px;
+  height: 84px;
+  background-image: url("../../img/logo-sedona-mobile.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .navigation {
+    width: 710px;
+    margin: 0 auto;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 56px;
+    /*height: 56px; /*для центрирования в IE по вертикали (проверить!)*/
+  }
+
+  .navigation-list {
+    & li {
+      min-width: 100px;
+    }
+  }
+
+  .navigation-list {
+    & li:nth-child(-n+2) {
+      text-align: left;
+    }
+  }
+
+  .navigation-list {
+    & li:nth-child(2) {
+      margin-right: 230px;
+    }
+  }
+
+  .navigation-list {
+    & li:nth-last-child(-n+2) {
+      text-align: right;
+    }
+  }
+
+  .navigation__link {
+    display: block;
+    width: auto;
+    height: 55px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 14px;
+    line-height: 56px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .navigation__link,
+  .navigation__link:visited {
+    color: rgb(0, 0, 0);
+  }
+
+  .navigation__link:hover {
+    color: rgb(129, 179, 210);
+  }
+
+  .navigation__link:active {
+    color: rgba(0, 0, 0, 0.302);
+  }
+
+  /*.navigation__link:focus {
+    color: rgb(118, 99, 87);
+  }*/
+
+  .navigation__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 51px);
+    width: 102px;
+    height: 84px;
+    background-image: url("../../img/logo-sedona-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    width: 1040px;
+    outline: 1px solid #de2525;
+  }
+
+  .navigation__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 94px);
+    width: 187px;
+    height: 96px;
+    background-image: url("../../img/logo-sedona-desktop.svg");
+  }
+}

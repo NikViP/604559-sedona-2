@@ -1,0 +1,134 @@
+.footer {
+  margin: 0 auto;
+  padding: 0;
+  width: 151px;
+}
+
+.footer__hashtag {
+  font-size: 21px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__social-list {
+  .lists-reset();
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 6px;
+  & span {
+    margin-right: 10px;
+  }
+}
+
+.footer__social-link {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-link:hover {
+  background-color: #669ec0;
+}
+
+.footer__social-link:active {
+  & path {
+    fill: #88b6d1;
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+}
+
+.footer__social-link:active {
+  box-shadow: none;
+}
+
+.footer__copyright-link:hover {
+  & path {
+    fill: rgb(129, 179, 210);
+  }
+}
+
+.footer__copyright-link:active {
+  & path {
+    fill: rgba(0, 0, 0, 0.302);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+  }
+
+  .footer__social-list {
+    width: 151px;
+  }
+
+  .footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 960px;
+  }
+
+  .footer__social-list {
+    width: 151px;
+  }
+
+  .footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+  }
+
+  .footer__social-link:hover {
+    background-color: #669ec0;
+  }
+
+  .footer__social-link:active {
+    & path {
+      fill: #88b6d1;
+      background-color: #5496bd;
+      color: #88b6d1;
+    }
+  }
+
+  .footer__social-link:active {
+    box-shadow: none;
+  }
+
+  .footer__copyright-link:hover {
+    & path {
+      fill: rgb(129, 179, 210);
+    }
+  }
+
+  .footer__copyright-link:active {
+    & path {
+      fill: rgba(0, 0, 0, 0.302);
+    }
+  }
+}
