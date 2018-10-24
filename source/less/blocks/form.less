@@ -42,14 +42,18 @@
   }
 }
 
-.list__name {
+.list__name,
+.list__contacts,
+.list__impression,
+.list__landmarks {
+  margin: 0 auto;
+  padding: 0;
   width: 280px;
-
-
 }
 
 .form__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -63,30 +67,22 @@
   flex-grow: 1;
   border: none;
   margin: 10px 0;
+  padding-left: 20px;
   background-color: #f2f2f2;
-  font-size: 8px;
-  line-height: 6px;
+  /*font-size: 18px;*/
+  line-height: 26px;
   font-weight: bold;
   text-transform: none;
 }
 
-.form__contacts {
-  justify-content: flex-start;
-  margin: 0 auto;
-  margin-top: 25px;
-  /*outline: 1px solid #1337d2;*/
-}
-
-.form__input--contacts,
+/*.form__input--contacts,
 .form__label--contacts {
-  /*idth: 280px;*/
   padding-left: 20px;
-}
+}*/
 
 .form__input--contacts,
 .form__input--name {
   height: 58px;
-  box-sizing: border-box;
 }
 
 .form__impression {
@@ -121,8 +117,8 @@
 .form__label--impression::before {
   width: 28px;
   height: 28px;
-  top: -6px;
-  left: -50px;
+  top: -5px;
+  left: -49px;
   background-color: #f2f2f2;
   /*border: 1px solid #678fa8;*/
 }
@@ -180,6 +176,7 @@
   width: 24px;
   height: 16px;
   background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
   top: 0;
   left: -62px;
 }
@@ -191,10 +188,10 @@
 }
 
 .area__emotions {
-  width: 100%;
+  width: 280px;
   height: 220px;
-  padding-top: 15px;
-  padding-left: 20px;
+  /*padding-top: 15px;
+  padding-left: 20px;*/
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial sans-serif";
@@ -214,6 +211,10 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.required  {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -253,7 +254,11 @@
 
   .form__impression {
     order: -1;
-    }
+  }
+
+  .required {
+    display: inline-block;
+  }
 }
 
 @media (min-width: @desktop-width) {
