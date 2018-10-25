@@ -42,16 +42,20 @@
   }
 }
 
-.list__name {
-  padding: 0;
-  width: 280px;
-
-
-}
-
 .form__item {
   display: flex;
   align-items: center;
+}
+
+.list__name,
+.list__contacts,
+.list__impression,
+.list__landmarks {
+  padding: 0;
+}
+
+.list__contacts .form__item {
+  flex-wrap: wrap;
 }
 
 .form__input {
@@ -62,6 +66,7 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  min-width: 0;
 }
 
 .form__contacts {
