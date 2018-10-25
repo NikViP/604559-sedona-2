@@ -246,6 +246,7 @@
     width: 648px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .form__input--contacts,
@@ -280,5 +281,34 @@
   .questionnaire,
   .form__questionnaire {
     width: 100%;
+  }
+
+  .form__contacts,
+  .form__landmarks,
+  .area__emotions,
+  .form__footer {
+    width: 960px;
+  }
+
+  .form__contacts,
+  .form__landmarks {
+    flex-direction: row;
+  }
+
+  .list__contacts {
+    width: 960px;
+    & .form__label,
+    & .form__input {
+      flex-grow: 0;
+      padding: 0;
+    }
+    & .form__input--contacts {
+      width: 315px;
+    }
+  }
+
+  .list__landmarks {
+    display: flex;
+    flex-direction: row;
   }
 }
