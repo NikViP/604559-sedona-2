@@ -26,6 +26,7 @@
 .form__landmarks,
  {
   border-bottom: solid 1px #e5e5e5;
+  outline: 1px solid #de27c1;
 }
 
 .form__name {
@@ -221,6 +222,7 @@
   .form__questionnaire {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     min-width: 100%;
   }
 
@@ -229,10 +231,28 @@
   .form__contacts,
   .form__impression,
   .form__landmarks,
-  .form__emotions {
+  .form__emotions,
+  .form__footer {
+    margin: 0;
+  }
+
+  .list__contacts {
+    width: 648px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form__footer {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__input--contacts,
+  .form__landmarks,
+  .area__emotions,
+  .form__footer {
+    width: 648px;
   }
 
   .questionnaire__caption {
