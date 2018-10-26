@@ -36,12 +36,12 @@
   min-width: 320px;
 }
 
-.reasons__item--first,
-.reasons__item--second {
+.reasons__item-first,
+.reasons__item-second {
   color: #ffffff;
 }
 
-.reasons__item--first {
+.reasons__item-first {
   & > .reasons__text {
     background-color: #81b3d2;
     height: 210px;
@@ -49,7 +49,7 @@
   }
 }
 
-.reasons__item--second {
+.reasons__item-second {
   & > .reasons__text {
     height: 190px;
   }
@@ -109,30 +109,30 @@
     padding: 0;
     width: 768px;
   }
-  .reasons__item--first,
-  .reasons__item--second {
+  .reasons__item-first,
+  .reasons__item-second {
     display: flex;
     width: 768px;
     height: 256px;
     background-color: #81b3d2;
     & .reasons__text {
-      flex-grow: 1;
+      width: 256px;
     }
     & .reasons__img {
-      flex-grow: 2;
+      width: 512px;
     }
   }
-  .reasons__item--first .reasons__text {
+  .reasons__item-first .reasons__text {
     & p {
       width: 270px;
       outline: 1px solid #de2525;
     }
   }
-  .reasons__item--second {
+  .reasons__item-second {
     flex-direction: row-reverse;
   }
-  .reasons__item--first .reasons__text,
-  .reasons__item--second .reasons__text {
+  .reasons__item-first .reasons__text,
+  .reasons__item-second .reasons__text {
     & p {
       width: 170px;
       outline: 1px solid #de2525;
@@ -175,43 +175,26 @@
 }
 
 @media (min-width: @desktop-width) {
-  /*.reasons__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 205px;
-    outline: 1px solid #1bd235;
-    & h3 {
-      width: 450px;
-      font-size: 21px;
-      line-height: 26px;
-      outline: 1px solid #1bd235;
-    }
-    & p {
-      width: 500px;
-      font-size: 14px;
-      line-height: 26px;
-      color: #333333;
-      outline: 1px solid #1bd235;
-    }
-  }
-  .reasons__five-reasons::after {
-    display: none;
-  }*/
   .reasons__list {
     width: 1200px;
   }
-  .reasons__item--first,
-  .reasons__item--second {
+  .reasons__item-first,
+  .reasons__item-second {
     width: 1200px;
+    & .reasons__text {
+      width: 400px;
+    }
+    & .reasons__img {
+      width: 800px;
+    }
   }
-  .reasons__item--first .reasons__text {
+  .reasons__item-first .reasons__text {
     & p {
       width: 270px;
       outline: 1px solid #de2525;
     }
   }
-  .reasons__item--second .reasons__text {
+  .reasons__item-second .reasons__text {
     & p {
       width: 220px;
       outline: 1px solid #1820d2;

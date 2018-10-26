@@ -6,15 +6,16 @@
   .lists-reset();
   width: 280px;
   margin: 0 auto;
-  outline: 1px solid #de2525;
+  outline: 1px solid #ded313;
 }
 
 .recommendation__item {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   text-align: left;
+  padding-left: 50px;
+  outline: 1px solid #de2525;
   & .recommendation__caption {
     font-size: 18px;
     line-height: 26px;
@@ -23,7 +24,7 @@
   & .recommendation__text {
     width: 220px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
   }
 }
 
@@ -34,8 +35,8 @@
   position: absolute;
   color: #81b3d2;
   fill: currentColor;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: -2px;
   width: 40px;
   height: 35px;
 }
@@ -43,18 +44,44 @@
 @media (min-width: @tablet-width) {
   .recommendation__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 768px;
-    height: 330px;
+    /*height: 330px;*/
     & .recommendation__item:nth-last-child(2) {
       order: 1;
     }
   }
 
+  .recommendation__list {
+    width: 768px;
+    height: 330px;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 1px solid #ded313;
+  }
+
+  .recommendation__item {
+    padding: 0;
+    height: 110px;
+    align-items: center;
+    text-align: center;
+    outline: 1px solid #de2525;
+    & .recommendation__text {
+      width: 162px;
+      outline: 1px solid #211ade;
+    }
+  }
+
+  .recommendation__item--burger .recommendation__text {
+    width: 158px;
+  }
+
   .recommendation__icon--housing,
   .recommendation__icon--gift,
   .recommendation__icon--burger {
+    top: 0;
+    left: 0;
     width: 75px;
     height: 72px;
   }
@@ -62,39 +89,6 @@
 
 @media (min-width: @desktop-width) {
   .recommendation__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 1200px;
-    & .recommendation__item:nth-last-child(2) {
-      order: 1;
-    }
-  }
-  .recommendation__item {
-    text-align: center;
-    padding: 0;
-    & h3 {
-      margin: 0 auto;
-      font-size: 21px;
-      line-height: 26px;
-      outline: 1px solid #de2525;
-    }
-    & p {
-      font-size: 14px;
-      line-height: 21px;
-    }
-  }
-  .recommendation__housing {
-    width: 260px;
-    outline: 1px solid #debb24;
-  }
-  .recommendation__food {
-    width: 290px;
-    outline: 1px solid #1820d2;
-  }
-  .recommendation__gifts {
-    width: 220px;
-    outline: 1px solid #13d23d;
-    background-color: #81b3d2;
   }
 }
