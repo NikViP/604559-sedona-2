@@ -16,15 +16,18 @@
   text-align: left;
   padding-left: 50px;
   outline: 1px solid #de2525;
-  & .recommendation__caption {
+  .recommendation__caption {
     font-size: 18px;
     line-height: 26px;
     outline: 1px solid #de2525;
   }
-  & .recommendation__text {
+  .recommendation__text {
     width: 220px;
     font-size: 14px;
     line-height: 21px;
+  }
+  .recommendation__wrap {
+    display: none;
   }
 }
 
@@ -44,21 +47,15 @@
 @media (min-width: @tablet-width) {
   .recommendation__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     width: 768px;
-    /*height: 330px;*/
+    height: 330px;
+    outline: 1px solid #ded313;
     & .recommendation__item:nth-last-child(2) {
       order: 1;
     }
-  }
-
-  .recommendation__list {
-    width: 768px;
-    height: 330px;
-    flex-direction: row;
-    justify-content: space-between;
-    outline: 1px solid #ded313;
   }
 
   .recommendation__item {
@@ -67,7 +64,16 @@
     align-items: center;
     text-align: center;
     outline: 1px solid #de2525;
+    & .recommendation__caption {
+      margin: 0;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 26px;
+      outline: 1px solid #de2525;
+    }
     & .recommendation__text {
+      margin: 0;
       width: 162px;
       outline: 1px solid #211ade;
     }
@@ -80,8 +86,8 @@
   .recommendation__icon--housing,
   .recommendation__icon--gift,
   .recommendation__icon--burger {
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: 43px;
     width: 75px;
     height: 72px;
   }
@@ -90,5 +96,24 @@
 @media (min-width: @desktop-width) {
   .recommendation__list {
     width: 1200px;
+  }
+
+  .recommendation__item {
+    .recommendation__caption {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .recommendation__text {
+      width: 290px;
+    }
+    .recommendation__wrap {
+      display: inline-block;
+    }
+  }
+
+  .recommendation__icon--housing,
+  .recommendation__icon--gift,
+  .recommendation__icon--burger {
+    left: 108px;
   }
 }
