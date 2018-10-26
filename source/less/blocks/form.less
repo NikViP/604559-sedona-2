@@ -272,6 +272,19 @@
     order: -1;
   }
 
+  .list__landmarks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 460px;
+    height: 160px;
+    margin: 0 auto;
+    outline: 1px solid #b7a42c;
+    & .form__item:nth-last-child(-n+2) {
+      margin-left: 120px;
+    }
+  }
+
   .required {
     display: inline-block;
   }
@@ -308,7 +321,6 @@
   }
 
   .list__landmarks {
-    display: flex;
     flex-direction: row;
   }
 }
