@@ -35,6 +35,11 @@
     <circle cx="30.083" cy="10.083" r="2"></circle>
     <circle cx="46.083" cy="10.083" r="2"></circle>
     </symbol>
+    <symbol id="navigation__menu" viewBox="0 0 22.928 21.982">
+      <rect width="22.928" height="3.964"></rect>
+      <rect y="9.009" width="22.928" height="3.964"></rect>
+      <rect y="18.018" width="22.928" height="3.964"></rect>
+    </symbol>
   </defs>
 </svg>
 
@@ -43,10 +48,13 @@
     <ul class="navigation__list">
       <li class="navigation__item"><a class="navigation__link link" href="index.html">главная</a></li>
       <li class="navigation__item"><a class="navigation__link link" href="#">фото и видео</a></li>
+      <li class="navigation__item navigation__item--inset"><a class="navigation__link navigation__link--inset link" href="#"></a></li></li>
       <li class="navigation__item"><a class="navigation__link link" href="form.html">форма отзыва</a></li>
-      <li class="navigation__item"><a class="navigation__link link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
+      <li class="navigation__item navigation__item--outset"><a class="navigation__link navigation__link--outset link"
+                                                               href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
     </ul>
     <a class="link" href="#"><img class="navigation__logo" src="" width="" height="" alt=""></a>
+    <svg xmlns="http://www.w3.org/2000/svg" class="navigation__menu"><use xlink:href="#navigation__menu"></use></svg>
   </nav>
   <img class="billboard__image" src="" width="" height="" alt="">
 </header>
@@ -59,7 +67,7 @@
       </div>
 
       <ol class="reasons__list">
-        <li class="reasons__item-first">
+        <li class="reasons__item reasons__item--first">
           <div class="reasons__text">
             <h3 class="reasons__caption">Настоящий городок</h3>
             <span class="reasons__number">№1</span>
@@ -71,7 +79,7 @@
               <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg">
               <img src="img/main-city-desktop@1x.jpg" width="800" height="256" alt="Настоящий городок">
             </picture-->
-            <img src="img/main-city-desktop@1x.jpg" width="" height="" alt="Настоящий городок">
+            <img src="img/main-city-desktop@1x.jpg" width="" height="260px" alt="Настоящий городок">
           </div>
         </li>
         <li class="reasons__recommendation">
@@ -94,9 +102,9 @@
             </li>
           </ul>
         </li>
-        <li class="reasons__item-second">
+        <li class="reasons__item reasons__item--second">
           <div class="reasons__text">
-            <h3 class="reasons__caption">Там есть мост дьявола</h3>
+            <h3 class="reasons__caption">Там есть <!--br class="reasons__wrap"-->мост дьявола</h3>
             <span class="reasons__number">№2</span>
             <p>Да, по нему можно пройти! Если вы осмелитесь, конечно </p>
           </div>
@@ -107,7 +115,7 @@
             <source media="(min-width:320px)" srcset="img/main-bridge-mobile@1x.jpg">
             <img src="img/main-bridge-desktop@1x.jpg" width="800" height="256" alt="Мост дъявола">
           </picture-->
-            <img src="img/main-bridge-desktop@1x.jpg" width="" height="" alt="Мост дъявола">
+            <img src="img/main-bridge-desktop@1x.jpg" width="" height="260px" alt="Мост дъявола">
           </div>
         </li>
         <li class="reasons__item">
