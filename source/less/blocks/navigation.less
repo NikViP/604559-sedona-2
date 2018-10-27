@@ -1,9 +1,6 @@
-.navigation {
-  position: relative;
-}
-
 .navigation__list {
   .lists-reset();
+  position: relative;
 }
 
 .navigation__link {
@@ -30,44 +27,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .navigation {
-    width: 710px;
-    margin: 0 auto;
-  }
-
   .navigation__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    position: relative;
+    width: 695px;
     min-height: 56px;
-    /*height: 56px; /*для центрирования в IE по вертикали (проверить!)*/
-  }
-
-  .navigation-list {
-    & li {
-      min-width: 100px;
-    }
-  }
-
-  .navigation-list {
-    & li:nth-child(-n+2) {
-      text-align: left;
-    }
-  }
-
-  .navigation-list {
-    & li:nth-child(2) {
-      margin-right: 230px;
-    }
-  }
-
-  .navigation-list {
-    & li:nth-last-child(-n+2) {
-      text-align: right;
-    }
+    outline: 1px solid #de2525;
   }
 
   .navigation__link {
@@ -110,7 +77,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation {
+  .navigation__list {
     width: 1040px;
     outline: 1px solid #de2525;
   }
