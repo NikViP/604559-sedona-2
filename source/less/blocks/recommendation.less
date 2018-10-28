@@ -4,6 +4,9 @@
 
 .recommendation__list {
   .lists-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 280px;
   height: 415px;
   margin: 0 auto;
@@ -13,20 +16,31 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: space-between;
+  height: 95px;
   padding-left: 50px;
-  .recommendation__caption {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .recommendation__text {
-    width: 220px;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .recommendation__wrap {
-    display: none;
-  }
+  text-align: left;
+}
+
+.recommendation__caption {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.recommendation__text {
+  margin: 0;
+  width: 220px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.recommendation__wrap {
+  display: none;
+}
+
+.recommendation__item--gifts {
+  height: 80px;
 }
 
 .recommendation__icon--housing,
@@ -36,8 +50,8 @@
   position: absolute;
   color: #81b3d2;
   fill: currentColor;
-  top: 27px;
-  left: 2px;
+  top: -10px;
+  left: 0;
   width: 40px;
   height: 35px;
 }
@@ -60,17 +74,19 @@
     height: 110px;
     align-items: center;
     text-align: center;
-    & .recommendation__caption {
-      margin: 0;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      font-size: 21px;
-      line-height: 26px;
-    }
-    & .recommendation__text {
-      margin: 0;
-      width: 162px;
-    }
+  }
+
+  .recommendation__caption {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .recommendation__text {
+    margin: 0;
+    width: 162px;
   }
 
   .recommendation__item--burger .recommendation__text {
@@ -94,8 +110,8 @@
 
   .recommendation__item {
     .recommendation__caption {
-      margin-top: 50px;
-      margin-bottom: 20px;
+      /*margin-top: 50px;
+      margin-bottom: 20px;*/
     }
     .recommendation__text {
       width: 290px;

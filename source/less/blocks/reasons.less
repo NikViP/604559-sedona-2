@@ -3,32 +3,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  /*outline: 1px solid #de2525;*/
+  height: 204px;
   & h3 {
     width: 260px;
     font-size: 18px;
     line-height: 26px;
-    /*outline: 1px solid #de2525;*/
   }
   & p {
     width: 280px;
     font-size: 14px;
     line-height: 26px;
-    /*outline: 1px solid #de2525;*/
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 202px;
+      left: 0;
+      width: 320px;
+      height: 37px;
+      background-image: url("../../img/bg-triangle.svg");
+    }
   }
-}
-
-.reasons__five-reasons::after {
-  position: absolute;
-  content: "";
-  z-index: 1;
-  top: 182px;
-  left: 0;
-  width: 320px;
-  height: 37px;
-  background-image: url("../../img/bg-triangle.svg");
-  /*outline: 1px solid #de2525;*/
 }
 
 .reasons__list {
@@ -41,22 +36,51 @@
   color: #ffffff;
 }
 
-.reasons__item--first {
+.reasons__wrapper--first {
+  width: 100%;
+  margin-top: 18px;
+  height: 210px;
+  background-color: #81b3d2;
+}
+
+.reasons__wrapper--first {
   & > .reasons__text {
-    width: 100%;
-    height: 153px;
-    padding-top: 65px;
-    background-color: #81b3d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
     & p {
       width: 270px;
-      margin: 0 auto;
-      margin-top: 17px;
+      line-height: 1.8;
     }
   }
-  & .reasons__caption {
-    margin: 0 auto;
-    margin-bottom: 10px;
+}
+
+/*.reasons__item--first {
+  & > .reasons__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    padding-top: 17px;
+    & h3 {
+      margin: 0;
+      line-height: 1;
+    }
+    & p {
+      margin: 0;
+      line-height: 1;
+      width: 270px;
+    }
   }
+}*/
+
+.reasons__wrapper--second {
+  height: 190px;
+  background-color: #81b3d2;
 }
 
 .reasons__item--second {
@@ -101,38 +125,10 @@
   }
 }
 
-.recommendation__item--housing {
-  & .recommendation__caption {
-    margin-top: 33px;
-  }
-  & .recommendation__text {
-    margin: 0;
-    margin-top: -2px;
-  }
-}
-
-.recommendation__item--gifts {
-  & .recommendation__caption {
-    margin: 0;
-    margin-top: 28px;
-  }
-  & .recommendation__text {
-    margin: 0;
-    margin-top: 14px;
-  }
-}
-
-.recommendation__item--burger {
-  & .recommendation__caption {
-    margin: 0;
-    margin-top: 26px;
-  }
-}
-
 .reasons__caption {
   /*width: 200px;*/
   margin: 0;
-  margin-top: 28px;
+  margin-top: 38px;
   margin-bottom: 14px;
   font-size: 18px;
   line-height: 26px;
@@ -186,7 +182,6 @@
       width: 512px;
     }
   }
-
   .reasons__item--second {
     flex-direction: row-reverse;
   }
@@ -223,19 +218,6 @@
     width: 256px;
     height: 256px;
   }
-  .recommendation__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 768px;
-    height: 330px;
-  }
-  .recommendation__item {
-    margin: 0;
-    padding: 0;
-  }
-
   .reasons__wrap {
     display: inline-block;
   }
@@ -278,9 +260,6 @@
   .reasons__item {
     width: 400px;
     height: 256px;
-  }
-  .recommendation__list {
-    width: 1200px;
   }
 
   .reasons__five-reasons {
