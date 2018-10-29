@@ -1,13 +1,9 @@
-.reasons__recommendation {
-  min-width: 320px;
-}
-
 .recommendation__list {
   .lists-reset();
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 280px;
   height: 415px;
   margin: 0 auto;
 }
@@ -20,27 +16,21 @@
   height: 95px;
   padding-left: 50px;
   text-align: left;
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+  }
+  p {
+    margin: 0;
+    width: 220px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
 }
 
-.recommendation__caption {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1;
-}
-
-.recommendation__text {
-  margin: 0;
-  width: 220px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.recommendation__wrap {
+.recommendation__gap {
   display: none;
-}
-
-.recommendation__item--gifts {
-  height: 80px;
 }
 
 .recommendation__icon--housing,
@@ -54,6 +44,10 @@
   left: 0;
   width: 40px;
   height: 35px;
+}
+
+.recommendation__item--gifts {
+  height: 80px;
 }
 
 @media (min-width: @tablet-width) {
@@ -116,7 +110,7 @@
     .recommendation__text {
       width: 290px;
     }
-    .recommendation__wrap {
+    .recommendation__gap {
       display: inline-block;
     }
   }
