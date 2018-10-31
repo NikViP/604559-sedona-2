@@ -67,14 +67,14 @@
   </section>
 
   <section>
-    <ol class="reasons">
-      <li class="reasons__item reasons-picture reasons-picture--first">
-        <div class="reasons__text reasons__text--first">
+    <ol class="resons-list">
+      <li class="reason-picture">
+        <div class="reason-picture__text">
           <h3>Настоящий городок</h3>
           <span>№1</span>
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="reasons__picture">
+        <div class="reasons-picture__image">
           <!--picture>
             <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg">
             <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg">
@@ -83,33 +83,33 @@
           <img src="img/main-city-desktop@1x.jpg" width="" height="260px" alt="Настоящий городок">
         </div>
       </li>
-      <li class="reasons__item recommendation">
+      <li class="recommendation">
         <h2 class="visually-hidden">Рекомендации</h2>
         <ul class="recommendation__list">
-          <li class="recommendation__item recommendation__item--housing">
-            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon--housing"><use xlink:href="#icon-house"></use></svg>
+          <li class="recommendation__item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon"><use xlink:href="#icon-house"></use></svg>
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="recommendation__item recommendation__item--gifts">
-            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon--gift"><use xlink:href="#icon-gift"></use></svg>
+          <li class="recommendation__item recommendation__item--gift">
+            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon"><use xlink:href="#icon-gift"></use></svg>
             <h3>Сувениры</h3>
             <p>Не только китайского, <br class="recommendation__gap">но и местного производства!</p>
           </li>
-          <li class="recommendation__item recommendation__item--burger">
-            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon--burger"><use xlink:href="#icon-burger"></use></svg>
+          <li class="recommendation__item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="recommendation__icon"><use xlink:href="#icon-burger"></use></svg>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
         </ul>
       </li>
-      <li class="reasons__item reasons-picture reasons-picture--second">
-        <div class="reasons__text reasons__text--second">
-          <h3>Там есть <br class="reasons__gap">мост дьявола</h3>
+      <li class="reason-picture reason-picture--left">
+        <div class="reason-picture__text">
+          <h3>Там есть <br class="reason__gap">мост дьявола</h3>
           <span>№2</span>
           <p>Да, по нему можно пройти! Если вы осмелитесь, конечно </p>
         </div>
-        <div class="reasons__picture">
+        <div class="reason-picture__image">
         <!--picture class="reasons__img">
           <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg">
           <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg">
@@ -119,22 +119,22 @@
           <img src="img/main-bridge-desktop@1x.jpg" width="" height="260px" alt="Мост дъявола">
         </div>
       </li>
-      <li class="reasons__item">
-        <div class="reasons__text">
+      <li class="reason">
+        <div class="reason__text">
           <h3>Небольшая площадь</h3>
           <span>№3</span>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
       </li>
-      <li class="reasons__item">
-        <div class="reasons__text">
+      <li class="reason">
+        <div class="reason__text">
           <h3>Красивая дорога</h3>
           <span>№4</span>
           <p>Ехать в седону из Лас-Вегаса<br>совсем не скучно!</p>
         </div>
       </li>
-      <li class="reasons__item">
-        <div class="reasons__text">
+      <li class="reason">
+        <div class="reason__text">
           <h3>Мало туристов</h3>
           <span>№5</span>
           <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
@@ -146,7 +146,7 @@
   <section class="invitation">
     <h3>Заинтересовались?</h3>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <button class="button" type="button">найти гостиницу</button>
+    <button class="invitation__button" type="button">найти гостиницу</button>
   </section>
 
   <iframe class="map"
@@ -158,9 +158,9 @@
 
 <footer class="footer">
     <div class="footer__hashtag">#visitsedona</div>
-    <ul class="footer__social-list">
+    <ul class="footer__social">
       <li>
-        <a class="footer__social-link link" href="#">
+        <a class="footer__link link" href="#">
           <span class="visually-hidden">Твиттер</span>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
             <path fill="#FFF"
@@ -169,7 +169,7 @@
         </a>
       </li>
       <li>
-        <a class="footer__social-link link" href="#">
+        <a class="footer__link link" href="#">
           <span class="visually-hidden">Фейсбук</span>
           <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                   <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"></path>
@@ -177,7 +177,7 @@
         </a>
       </li>
       <li>
-        <a class="footer__social-link link" href="#">
+        <a class="footer__link link" href="#">
           <span class="visually-hidden">Ютуб</span>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
             <path fill="#FFF"
@@ -189,11 +189,11 @@
     <div class="footer__copyright">
       <span class="visually-hidden">Курсы HTML Academy</span>
       <span>разработано</span>
-      <a class="footer__copyright-link link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="logo-htmlacademy">
       </a>
     </div>
-  </footer>
+</footer>
 
 </body>
 
