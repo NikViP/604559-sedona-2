@@ -25,35 +25,30 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reasons__title {
+  .reasons__list {
+    .lists-reset();
     display: flex;
     flex-direction: column;
-    align-items: center;
-      h3 {
-        width: 450px;
-        font-size: 21px;
-        line-height: 26px;
-    }
-      p {
-        width: 500px;
-        font-size: 14px;
-        line-height: 26px;
-        color: #333333;
-    }
-  }
-  .reasons__five-reasons::after {
-    display: none;
-  }
-  .reasons__list {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 768px;
   }
-
+  .reason-picture {
+    display: flex;
+    flex-direction: row;
+    background-color: #999999;
+  }
+  .reason-picture__wrapper {
+    width: 256px;
+  }
+  .reason-picture__image {
+    width: 512px;
+  }
+  reason-picture__wrapper--revers {
+    order: 20;
+  }
   /*ТУТ ПЛОХО!!!*/
-  .reasons__item--first,
+  /*.reasons__item--first,
   .reasons__item--second {
     display: flex;
     width: 768px;
@@ -65,7 +60,7 @@
     & .reasons__img {
       width: 512px;
     }
-  }
+  }*/
   /*ТУТ ПЛОХО!!!*/
   .reasons__item--second {
     flex-direction: row-reverse;
