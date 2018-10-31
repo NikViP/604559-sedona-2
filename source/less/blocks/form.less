@@ -1,42 +1,27 @@
-.questionnaire,
 .form__questionnaire {
   min-width: 280px;
   margin: 0 auto;
 }
 
-.questionnaire__caption {
-  margin: 40px auto;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.questionnaire__text {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 280px;
-  font-size: 14px;
-  line-height: 24px;
-  /*outline: 1px solid #b70909;*/
-}
-
-.questionnaire,
 .form__name,
 .form__contacts,
 .form__impression,
 .form__landmarks,
  {
   border-bottom: solid 1px #e5e5e5;
-  /*outline: 1px solid #de27c1;*/
 }
+
+/*ТУТ ПЛОХО!!!*/
 
 .form__name {
   margin: 0 auto;
   /*margin-bottom: 35px;*/
   /*outline: 1px solid #13d23d;*/
-  & .form__caption {
+  .form__caption {
     margin: 20px 0;
   }
 }
+/*ТУТ ПЛОХО!!!*/
 
 .form__item {
   display: flex;
@@ -218,7 +203,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .questionnaire,
   .form__questionnaire {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +210,6 @@
     min-width: 100%;
   }
 
-  .questionnaire,
   .form__name,
   .form__contacts,
   .form__impression,
@@ -291,7 +274,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .questionnaire,
   .form__questionnaire {
     width: 100%;
   }
@@ -308,6 +290,8 @@
     flex-direction: row;
   }
 
+  /*ТУТ ПЛОХО!!!*/
+
   .list__contacts {
     width: 960px;
     & .form__label,
@@ -319,6 +303,8 @@
       width: 315px;
     }
   }
+
+  /*ТУТ ПЛОХО!!!*/
 
   .list__landmarks {
     flex-direction: row;

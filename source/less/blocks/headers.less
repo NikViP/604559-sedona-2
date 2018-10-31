@@ -1,0 +1,141 @@
+.header__index {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
+  height: 200px;
+  h3 {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 260px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  p {
+    margin: 0;
+    width: 280px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 200px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 37px;
+    background-image: url("../../img/bg-triangle.svg");
+  }
+}
+
+.header__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  & h2 {
+    margin: 0;
+    padding-bottom: 35px;
+    width: 140px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  & p {
+    margin: 0;
+    width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.header__questionnaire {
+  min-width: 280px;
+  margin: 0 auto;
+  border-bottom: solid 1px #e5e5e5;
+  h2 {
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 280px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .header__index {
+
+    h3 {
+
+    }
+    p {
+
+    }
+
+    &::after {
+
+    }
+  }
+
+  .header__photo {
+    width: 768px;
+    margin-top: 70px;
+    padding: 0;
+    border-bottom: none;
+    & h2 {
+      width: 240px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+    & p {
+      width: 440px;
+      padding-bottom: 72px;
+    }
+  }
+
+  .header__questionnaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__index {
+
+    h3 {
+
+    }
+    p {
+
+    }
+
+    &::after {
+
+    }
+  }
+
+  .header__photo {
+    width: 1200px;
+    margin-top: 110px;
+  }
+
+  .header__questionnaire {
+    width: 100%;
+  }
+}
+

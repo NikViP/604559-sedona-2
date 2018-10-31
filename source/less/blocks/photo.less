@@ -1,28 +1,5 @@
-.photo__header,
 .photo {
   border-bottom: 1px solid #e5e5e5;
-}
-
-.photo__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  & h2 {
-    margin: 0;
-    padding-bottom: 35px;
-    width: 140px;
-    font-size: 18px;
-    line-height: 26px;
-  }
-  & p {
-    margin: 0;
-    width: 270px;
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 
 .photo {
@@ -79,24 +56,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo__header,
   .photo {
     border-bottom: none;
-  }
-
-  .photo__header {
-    width: 768px;
-    margin-top: 70px;
-    padding: 0;
-    & h2 {
-      width: 240px;
-      font-size: 30px;
-      line-height: 26px;
-    }
-    & p {
-      width: 440px;
-      padding-bottom: 72px;
-    }
   }
 
   .photo {
@@ -143,16 +104,16 @@
     width: 648px;
     padding-top: 65px;
     padding-bottom: 75px;
-    & h2 {
-      margin: 0;
-      padding-bottom: 35px;
-      width: 400px;
-      font-size: 30px;
-      line-height: 26px;
+      h2 {
+        margin: 0;
+        padding-bottom: 35px;
+        width: 400px;
+        font-size: 30px;
+        line-height: 26px;
     }
-    & p {
-      margin: 0;
-      width: 440px;
+      p {
+        margin: 0;
+        width: 440px;
     }
   }
 
@@ -163,11 +124,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo__header {
-    width: 1200px;
-    margin-top: 110px;
-  }
-
   .photo__content,
   .photo__content--first {
     width: 400px;
@@ -190,8 +146,8 @@
   .photo__footer {
     width: 1200px;
     padding: 70px 0;
-    & h2 {
-      padding-bottom: 30px;
+      h2 {
+        padding-bottom: 30px;
     }
   }
 
