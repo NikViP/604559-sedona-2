@@ -33,71 +33,6 @@
     padding: 0;
     width: 768px;
   }
-  .reason-picture {
-    display: flex;
-    flex-direction: row;
-    background-color: #999999;
-  }
-  .reason-picture__wrapper {
-    width: 256px;
-  }
-  .reason-picture__image {
-    width: 512px;
-  }
-  reason-picture__wrapper--revers {
-    order: 20;
-  }
-  /*ТУТ ПЛОХО!!!*/
-  /*.reasons__item--first,
-  .reasons__item--second {
-    display: flex;
-    width: 768px;
-    height: 256px;
-    background-color: #81b3d2;
-    & .reasons__text {
-      width: 256px;
-    }
-    & .reasons__img {
-      width: 512px;
-    }
-  }*/
-  /*ТУТ ПЛОХО!!!*/
-  .reasons__item--second {
-    flex-direction: row-reverse;
-  }
-  .reasons__item--first .reasons__text,
-  .reasons__item--second .reasons__text {
-    p {
-      width: 170px;
-      margin: 0;
-      margin-top: 25px;
-    }
-  }
-  .reasons__caption {
-    width: 160px;
-    margin: 0;
-    margin-top: 45px;
-    margin-bottom: 10px;
-    font-size: 21px;
-    line-height: 26px;
-  }
-  .reasons__text {
-    display: flex;
-    flex-direction: column;
-    width: 256px;
-    align-items: center;
-  }
-  .reasons__img {
-    background-color: #999B99;
-    overflow: hidden;
-  }
-  .reasons__item {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 256px;
-    height: 256px;
-  }
   .reasons__gap {
     display: inline-block;
   }
@@ -106,48 +41,5 @@
 @media (min-width: @desktop-width) {
   .reasons__list {
     width: 1200px;
-  }
-
-  /*ТУТ ПЛОХО!!!*/
-  .reasons__item--first,
-  .reasons__item--second {
-    width: 1200px;
-    & .reasons__text {
-      width: 400px;
-    }
-    & .reasons__img {
-      width: 800px;
-    }
-  }
-
-  /*ТУТ ПЛОХО!!!*/
-  .reasons__item--first .reasons__text {
-    & p {
-      width: 270px;
-    }
-  }
-  .reasons__item--second .reasons__text {
-    & p {
-      width: 220px;
-    }
-  }
-  /*ТУТ ПЛОХО!!!*/
-  .reasons__item {
-    & p {
-      margin-top: 25px;
-    }
-  }
-  /*ТУТ ПЛОХО!!!*/
-  .reasons__text {
-    width: 400px;
-  }
-  .reasons__item {
-    width: 400px;
-    height: 256px;
-  }
-
-  .reasons__five-reasons {
-    margin: 0;
-    margin-top: 10px;
   }
 }
