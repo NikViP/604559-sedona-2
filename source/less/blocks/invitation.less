@@ -22,29 +22,41 @@
       height: 58px;
       margin-top: 34px;
       font-size: 21px;
-      font-weight: bold;
-      line-height: 26px;
+      font-weight: normal;
       color: #ffffff;
       background-color: #81b3d2;
       border: none;
   }
 }
 
+.reason__gap {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .invitation {
     width: 768px;
-     h3 {
+    height: 318px;
+    h3 {
+      padding-top: 55px;
+      padding-bottom: 30px;
       font-size: 30px;
       line-height: 26px;
     }
-     p {
+    p {
       width: 440px;
       font-size: 14px;
       line-height: 24px;
     }
-     button {
+    button {
       width: 458px;
+      margin-top: 43px;
+      box-sizing: border-box;
     }
+}
+
+  .reason__gap {
+    display: inline-block;
   }
 }
 
