@@ -107,3 +107,46 @@
     display: inline-block;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .reason-picture__wrapper {
+    width: 400px;
+  }
+
+  .reason-picture__image {
+    width: 800px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason-picture__text {
+    width: 270px;
+    padding-top: 54px;
+    h3 {
+      width: 130px;
+    }
+    span {
+      margin-top: 10px;
+    }
+    p {
+      line-height: 1.4;
+    }
+  }
+
+  .reason-picture__text--revers {
+    width: 220px;
+    h3 {
+      width: 320px;
+    }
+    span {
+      margin-top: ;
+    }
+    p {
+      width: 220px;
+      line-height: 1;
+    }
+    .reason__gap {
+      display: inline-block;
+    }
+  }
+}
