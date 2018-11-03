@@ -1,13 +1,10 @@
 .photo {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.photo {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 20px 0;
+  padding-top: 22px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .photo__img {
@@ -18,13 +15,16 @@
 .photo__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  margin: 0;
+  align-self: start;
+  height: 70px;
+  padding: 20px;
 }
 
 .photo__signature,
 .photo__like {
-  line-height: 24px;
+  line-height: 1;
   font-weight: bold;
 }
 
@@ -39,14 +39,18 @@
   min-width: 320px;
   margin: 0 auto;
   & h2 {
+    margin-top: 40px;
+    margin-bottom: 34px;
     width: 220px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1;
   }
   & p {
+    margin: 0;
+    margin-bottom: 40px;
     width: 270px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.6;
   }
 }
 .photo__video {
