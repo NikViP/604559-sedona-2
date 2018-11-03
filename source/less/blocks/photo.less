@@ -17,9 +17,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: start;
+  /*align-self: start;*/
   height: 70px;
-  padding: 20px;
+  /*padding: 20px 0;*/
 }
 
 .photo__signature,
@@ -30,6 +30,13 @@
 
 .photo__author {
   text-transform: none;
+}
+
+.photo-wrapper {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  /*outline: 1px solid #0ede48;*/
 }
 
 .photo__footer {
@@ -104,6 +111,14 @@
     height: 400px;
   }
 
+  .photo-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 648px;
+  }
+
   .photo__footer {
     width: 648px;
     padding-top: 65px;
@@ -145,6 +160,10 @@
   .photo__img--first {
     width: 1200px;
     height: 400px;
+  }
+
+  .photo-wrapper {
+      width: 1200px;
   }
 
   .photo__footer {
