@@ -1,16 +1,15 @@
-.navigation {
-  position: relative;
-}
-
 .navigation__list {
   .lists-reset();
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation__link {
   .links-reset();
   display: block;
   width: auto;
-  height: 56px;
+  height: 54px;
   background-color: #81b3d2;
   border-bottom: solid 1px #678fa8;
   border-top: solid 1px #9ac2db;
@@ -20,66 +19,75 @@
   font-weight: bold;
 }
 
+.navigation__item--inset {
+  order: 1;
+}
+
+.navigation__link--inset,
+.navigation__link--outset {
+  border-bottom: none;
+}
+
+.navigation__link--inset {
+  background-color: #ffffff;
+}
+
+.navigation__link--outset {
+  box-shadow: inset 0 -30px 15px -35px #34495e;
+}
+
 .navigation__logo {
   position: absolute;
-  top: 231px;
-  left: calc(50% - 51px);
+  top: 223px;
+  left: calc(50% - 49px);
   width: 102px;
   height: 84px;
   background-image: url("../../img/logo-sedona-mobile.svg");
 }
 
+.navigation__menu {
+  position: absolute;
+  top: 239px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  fill: currentColor;
+  color: #81b3d2;
+}
+
 @media (min-width: @tablet-width) {
-  .navigation {
-    width: 710px;
-    margin: 0 auto;
-  }
-
   .navigation__list {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    position: relative;
     min-height: 56px;
-    /*height: 56px; /*для центрирования в IE по вертикали (проверить!)*/
   }
 
-  .navigation-list {
-    & li {
-      min-width: 100px;
-    }
+  .navigation__item {
+    flex-grow: 1;
   }
 
-  .navigation-list {
-    & li:nth-child(-n+2) {
-      text-align: left;
-    }
+  .navigation__item--inset {
+    order: 0;
   }
 
-  .navigation-list {
-    & li:nth-child(2) {
-      margin-right: 230px;
-    }
-  }
-
-  .navigation-list {
-    & li:nth-last-child(-n+2) {
-      text-align: right;
-    }
+  .navigation__item--outset {
+    order: 1;
   }
 
   .navigation__link {
-    display: block;
-    width: auto;
+    width: 153px;
     height: 55px;
     background-color: #ffffff;
     border: none;
     font-size: 14px;
     line-height: 56px;
     color: #000000;
-    font-weight: bold;
+  }
+
+  .navigation__link--outset {
+    box-shadow: none;
   }
 
   .navigation__link,
@@ -107,12 +115,15 @@
     height: 84px;
     background-image: url("../../img/logo-sedona-tablet.svg");
   }
+
+  .navigation__menu {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .navigation {
-    width: 1040px;
-    outline: 1px solid #de2525;
+  .navigation__link {
+    width: 239px;
   }
 
   .navigation__logo {

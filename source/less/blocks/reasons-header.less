@@ -1,0 +1,34 @@
+.reasons-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 202px;
+  h3 {
+    margin: 0;
+    padding-top: 40px;
+    width: 260px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  p {
+    margin: 0;
+    width: 280px;
+    font-size: 14px;
+    padding-bottom: 7px;
+    line-height: 1.6;
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 202px;
+      left: calc(50% - 160px);
+      width: 320px;
+      height: 37px;
+      background-image: url("../../img/bg-triangle.svg");
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.form-landmarks {
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.form-landmarks__list {
+  padding: 0;
+
+}
+
+.form-landmarks__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-landmarks__input {
+  flex-grow: 1;
+  border: none;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  min-width: 0;
+  display: none;
+}
+
+.form-landmarks__label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 20px auto;
+  margin-left: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: none;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -20px;
+    left: -80px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: -62px;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .form-landmarks {
+    margin: 0;
+    width: 648px;
+    border-bottom: none;
+    h3 {
+      font-size: 21px;
+      line-height: 1;
+    }
+  }
+
+  .form-landmarks__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 460px;
+    height: 160px;
+    margin: 0 auto;
+    & .form-landmarks__item:nth-last-child(-n+2) {
+      margin-left: 120px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-landmarks {
+    flex-direction: row;
+    width: 960px;
+  }
+
+  .form-landmarks__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+    height: 160px;
+    margin: 0 auto;
+    & .form-landmarks__item:nth-last-child(-n+2) {
+      margin-left: 0;
+    }
+  }
+}
+
+

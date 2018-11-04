@@ -4,54 +4,70 @@
   flex-direction: column;
   align-items: center;
   height: 240px;
-  outline: 1px solid #de2525;
-  & h3 {
-    font-size: 21px;
-    line-height: 26px;
-    outline: 1px solid #de2525;
+    h3 {
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 18px;
+      font-size: 21px;
+      line-height: 26px;
+}
+    p {
+      margin: 0;
+      width: 270px;
+      font-size: 14px;
+      line-height: 24px;
+}
+    button {
+      width: 280px;
+      height: 58px;
+      margin-top: 34px;
+      font-size: 21px;
+      font-weight: normal;
+      color: #ffffff;
+      background-color: #81b3d2;
+      border: none;
   }
-  & p {
-    width: 260px;
-    font-size: 14px;
-    line-height: 24px;
-    outline: 1px solid #de2525;
-  }
-  & button {
-    width: 280px;
-    height: 58px;
-    color: #ffffff;
-    background-color: #81b3d2;
-    border: none;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-  }
+}
+
+.reason__gap {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .invitation {
     width: 768px;
-    outline: 1px solid #de2525;
-    & h3 {
+    height: 318px;
+    h3 {
+      padding-top: 55px;
+      padding-bottom: 30px;
       font-size: 30px;
       line-height: 26px;
-      outline: 1px solid #de2525;
     }
-    & p {
+    p {
       width: 440px;
       font-size: 14px;
       line-height: 24px;
-      outline: 1px solid #de2525;
     }
-    & button {
+    button {
       width: 458px;
+      margin-top: 43px;
+      box-sizing: border-box;
     }
+}
+
+  .reason__gap {
+    display: inline-block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .invitation {
     width: 1200px;
-    outline: 1px solid #de2525;
+    height: 330px;
+  }
+  .invitation {
+    button {
+      margin-top: 48px;
+    }
   }
 }
