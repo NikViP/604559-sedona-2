@@ -1,0 +1,77 @@
+.form-impression {
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.form-impression__list {
+  padding: 0;
+}
+
+.form-impression__item {
+  display: flex;
+  align-items: center;
+}
+
+.form-impression__input {
+  flex-grow: 1;
+  border: none;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  min-width: 0;
+}
+
+/*.form-impression__input {
+  display: none;
+}*/
+
+.form-impression__label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form-impression__label {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  &::before {
+    width: 28px;
+    height: 28px;
+    top: -5px;
+    left: -49px;
+    background-color: #f2f2f2;
+  }
+  &::after {
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: -41px;
+    background-color: #000000;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-impression {
+    margin: 0;
+    order: -1;
+  }
+
+}
+
+@media (min-width: @desktop-width) {}
+
+
+

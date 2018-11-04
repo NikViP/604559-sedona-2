@@ -1,0 +1,36 @@
+.form-footer__submit {
+  width: 280px;
+  height: 58px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.form-footer__required {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form-footer {
+    margin: 0;
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-footer__required {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-footer {
+    width: 960px;
+  }
+}
