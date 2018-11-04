@@ -14,6 +14,7 @@
 .form-impression__item {
   display: flex;
   align-items: center;
+  padding: 15px 0;
 }
 
 .form-impression__input {
@@ -32,7 +33,7 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 80px;
   margin-top: 10px;
   margin-bottom: 15px;
   text-align: left;
@@ -50,17 +51,17 @@
     border-radius: 50%;
   }
   &::before {
-    width: 28px;
-    height: 28px;
-    top: -5px;
-    left: -49px;
+    width: 56px;
+    height: 56px;
+    top: -18px;
+    left: -80px;
     background-color: #f2f2f2;
   }
   &::after {
-    width: 12px;
-    height: 12px;
-    top: 3px;
-    left: -41px;
+    width: 24px;
+    height: 24px;
+    top: -3px;
+    left: -64px;
     background-color: #000000;
   }
 }
@@ -69,6 +70,11 @@
   .form-impression {
     margin: 0;
     order: -1;
+    border-bottom: none;
+    h3 {
+      font-size: 21px;
+      line-height: 1;
+    }
   }
 
 }
