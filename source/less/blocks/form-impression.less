@@ -5,6 +5,9 @@
 }
 
 .form-impression__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0;
 }
 
@@ -22,11 +25,8 @@
   font-weight: bold;
   text-transform: none;
   min-width: 0;
-}
-
-/*.form-impression__input {
   display: none;
-}*/
+}
 
 .form-impression__label {
   display: inline-block;
@@ -41,6 +41,8 @@
 }
 
 .form-impression__label {
+  font-size: 18px;
+  line-height: 1;
   &::before,
   &::after {
     content: "";
