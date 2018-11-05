@@ -1,8 +1,15 @@
+.photo-wrapper,
+.photo-wrapper--first {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .photo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 22px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -13,13 +20,15 @@
 }
 
 .photo__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  /*align-self: start;*/
-  height: 70px;
-  /*padding: 20px 0;*/
+  align-self: start;
+  height: 76px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .photo__signature,
@@ -28,15 +37,22 @@
   font-weight: bold;
 }
 
-.photo__author {
-  text-transform: none;
+.photo__like {
+  padding-left: 40px;
 }
 
-.photo-wrapper {
-  position: relative;
-  min-width: 320px;
-  margin: 0 auto;
-  /*outline: 1px solid #0ede48;*/
+.photo__icon {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 22px;
+  height: 20px;
+  fill: currentColor;
+  color: #b2b2b2;
+}
+
+.photo__author {
+  text-transform: none;
 }
 
 .photo__footer {
@@ -72,6 +88,7 @@
   }
 
   .photo {
+    margin: 0;
     padding: 0;
     border: 0;
   }
@@ -85,16 +102,27 @@
   .photo__content--first {
     justify-content: center;
     width: 324px;
-    height: 80px;
+    margin: 0;
     margin-top: -80px;
     padding: 0 20px;
     box-sizing: border-box;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.302);
+    color: #000000;
+    background-color: #f2f2f2;
   }
 
   .photo__content--first {
     width: 648px;
+    align-self: center;
+  }
+
+  .photo__content--third {
+    background-color: #eaeaea;
+  }
+
+  .photo__icon {
+    top: 23px;
+    left: 248px;
+    color: #a9a9a9;
   }
 
   .photo__author {
@@ -104,6 +132,7 @@
   .photo__like {
     align-self: flex-end;
     order: 1;
+    padding-left: 35px;
     line-height: 0.2;
   }
 
@@ -145,8 +174,11 @@
 
 @media (min-width: @desktop-width) {
   .photo__content,
-  .photo__content--first {
+  .photo__content--first,
+  .photo__content--third {
     width: 400px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.302);
   }
 
   .photo__content--first {
@@ -161,6 +193,12 @@
   .photo__img--first {
     width: 1200px;
     height: 400px;
+  }
+
+  .photo__icon {
+    top: 23px;
+    left: 1112px;
+    color: #ffffff;
   }
 
   .photo-wrapper {
