@@ -19,6 +19,15 @@
   font-weight: bold;
 }
 
+.navigation__link:hover {
+  background-color: #669ec0;
+}
+
+.navigation__link:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
 .navigation__item--inset {
   order: 1;
 }
@@ -92,20 +101,29 @@
 
   .navigation__link,
   .navigation__link:visited {
-    color: rgb(0, 0, 0);
+    color: #000000;
+    background-color: #ffffff;
   }
 
   .navigation__link:hover {
-    color: rgb(129, 179, 210);
+    color: #81b3d2;
   }
 
   .navigation__link:active {
     color: rgba(0, 0, 0, 0.302);
   }
 
-  /*.navigation__link:focus {
-    color: rgb(118, 99, 87);
-  }*/
+  .navigation__link--active {
+    color: #766357;
+  }
+
+  .navigation__link--active:hover {
+    color: #604e43;
+  }
+
+  .navigation__link--active:active {
+    color: rgba(118, 99, 87, 0.302);
+  }
 
   .navigation__logo {
     position: absolute;
