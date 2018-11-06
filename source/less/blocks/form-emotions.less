@@ -22,9 +22,22 @@
     margin: 0;
     width: 648px;
     border-bottom: none;
+  }
+
+  .form-emotions__title {
+    display: flex;
+    width: 650px;
+    align-items: center;
     h3 {
+      width: 290px;
+      margin: 0 auto;
       font-size: 21px;
       line-height: 1;
+    }
+    div {
+      width: 125px;
+      height: 1px;
+      background-color: #dbdbdb;
     }
   }
 }
@@ -32,5 +45,12 @@
 @media (min-width: @desktop-width) {
   .form-emotions {
     width: 960px;
+  }
+
+  .form-emotions__title {
+    width: 960px;
+    div {
+      width: 270px;
+    }
   }
 }

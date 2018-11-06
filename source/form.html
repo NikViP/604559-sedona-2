@@ -74,6 +74,7 @@
 
       <section class="form-name">
         <h3>представьтесь:</h3>
+        <p class="form-name__border"></p>
         <ul class="form-name__list">
           <li class="form-name__item">
             <label class="form-name__label" for="first-name">имя*:</label>
@@ -91,7 +92,11 @@
       </section>
 
       <section class="form-contacts">
-        <h3>контактная информация:</h3>
+        <div class="form-contacts__title">
+          <div></div>
+          <h3>контактная информация:</h3>
+          <div></div>
+        </div>
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label class="form-contacts__label form-contacts__label--long" for="phone">контактный телефон*:</label>
@@ -126,8 +131,12 @@
       </section>
 
       <section class="form-landmarks">
-      <h3>посещенные достопримечательности:</h3>
-      <ul class="form-landmarks__list">
+        <div class="form-landmarks__title">
+          <div></div>
+          <h3>посещенные достопримечательности:</h3>
+          <div></div>
+        </div>
+        <ul class="form-landmarks__list">
         <li class="form-landmarks__item">
           <input class="form-landmarks__input" type="checkbox" name="bridge" id="bridge-field" checked>
           <label class="form-landmarks__label" for="bridge-field">Мост Дьявола</label>
@@ -148,9 +157,13 @@
     </section>
 
       <section class="form-emotions">
+        <div class="form-emotions__title">
+          <div></div>
           <h3>опишите свои эмоции:</h3>
-          <textarea class="form-emotions__area" name="emotions" id="emotions" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-        </section>
+          <div></div>
+        </div>
+        <textarea class="form-emotions__area" name="emotions" id="emotions" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </section>
 
       <section class="form-footer">
       <button class="form-footer__submit" type="submit" value="отправить отзыв">отправить отзыв</button>

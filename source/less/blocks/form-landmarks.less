@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding: 0;
   border-bottom: solid 1px #e5e5e5;
+  h3 {
+    width: 240px;
+  }
 }
 
 .form-landmarks__list {
@@ -66,9 +69,22 @@
     margin: 0;
     width: 648px;
     border-bottom: none;
+  }
+
+  .form-landmarks__title {
+    display: flex;
+    width: 650px;
+    align-items: center;
     h3 {
+      width: 290px;
+      margin: 0 auto;
       font-size: 21px;
       line-height: 1;
+    }
+    div {
+      width: 125px;
+      height: 1px;
+      background-color: #dbdbdb;
     }
   }
 
@@ -89,6 +105,13 @@
   .form-landmarks {
     flex-direction: row;
     width: 960px;
+   }
+
+  .form-landmarks__title {
+    width: 960px;
+    div {
+      width: 270px;
+    }
   }
 
   .form-landmarks__list {
