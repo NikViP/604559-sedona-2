@@ -25,9 +25,9 @@
   justify-content: space-between;
   align-items: flex-start;
   align-self: start;
-  height: 76px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  height: 70px;
+  margin-top: 15px;
+  margin-bottom: 23px;
 }
 
 .photo__signature,
@@ -38,12 +38,13 @@
 
 .photo__like {
   position: relative;
+  padding-top: 5px;
   padding-left: 40px;
 }
 
 .photo__icon {
   position: absolute;
-  top: -6px;
+  top: 0;
   left: 0;
   width: 22px;
   height: 20px;
@@ -62,7 +63,7 @@
   min-width: 320px;
   margin: 0 auto;
   & h2 {
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 34px;
     width: 220px;
     font-size: 18px;
@@ -70,16 +71,11 @@
   }
   & p {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     width: 270px;
     font-size: 14px;
     line-height: 1.6;
   }
-}
-.photo__video {
-  width: 320px;
-  height: 200px;
-  margin-bottom: 80px;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,7 +99,7 @@
     justify-content: center;
     width: 324px;
     margin: 0;
-    margin-top: -80px;
+    margin-top: -74px;
     padding: 0 20px;
     box-sizing: border-box;
     color: #000000;
@@ -165,11 +161,6 @@
         width: 440px;
     }
   }
-
-  .photo__video {
-    width: 648px;
-    height: 500px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -209,9 +200,5 @@
       h2 {
         padding-bottom: 30px;
     }
-  }
-
-  .photo__video {
-    width: 800px;
   }
 }

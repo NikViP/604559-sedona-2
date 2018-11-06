@@ -144,9 +144,22 @@
       <p> смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </section>
 
-    <video class="photo__video" controls>
-      <source src="">
-    </video>
+    <section class="video">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
+        <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
+        <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg"
+             width="" height="" alt="Video of Sedona">
+      </picture>
+      <div class="video__control">
+        <div class="video__control--top"></div>
+        <div class="video__control--bottom"></div>
+        <div class="video__progress">
+          <div class="video__band"></div>
+          <div class="video__slider"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
 <footer class="footer">
