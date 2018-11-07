@@ -92,13 +92,39 @@ input[type="radio"]:active + .form-impression__label span {
 
 @media (min-width: @tablet-width) {
   .form-impression {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    height: 300px;
     margin: 0;
+    padding: 0;
     order: -1;
     border-bottom: none;
     h3 {
       margin-left: 0;
+      margin-bottom: 78px;
       font-size: 21px;
       line-height: 1;
+    }
+  }
+
+  .form-impression__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 175px;
+  }
+
+  .form-impression__label {
+    margin-left: 76px;
+    span {
+      top: 0;
+      left: -60px;
+    }
+    &::before {
+      top: -16px;
+      left: -76px;
     }
   }
 }
