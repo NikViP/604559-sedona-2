@@ -61,8 +61,10 @@
   border-bottom: solid 1px #e5e5e5;
   h2 {
     margin: 40px auto;
+    margin-top: 38px;
+    margin-bottom: 26px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.4;
   }
   p {
     margin: 0 auto;
@@ -102,12 +104,13 @@
     border-bottom: none;
     & h2 {
       width: 240px;
+      padding-bottom: 35px;
       font-size: 30px;
       line-height: 26px;
     }
     & p {
       width: 440px;
-      padding-bottom: 72px;
+      padding-bottom: 70px;
     }
   }
 
@@ -127,5 +130,11 @@
       font-size: 14px;
       line-height: 1;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__photo h2 {
+    margin-top: 40px;
   }
 }

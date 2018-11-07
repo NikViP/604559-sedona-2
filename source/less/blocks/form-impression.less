@@ -1,26 +1,37 @@
 .form-impression {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+  padding-top: 20px;
+  width: 320px;
+  height: 288px;
   border-bottom: solid 1px #e5e5e5;
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+  }
 }
 
 .form-impression__list {
+  margin: 0;
+  margin-top: 45px;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 0;
+  height: 160px;
 }
 
 .form-impression__item {
   display: flex;
   align-items: center;
-  padding: 15px 0;
 }
 
 .form-impression__input {
   flex-grow: 1;
   border: none;
-  margin: 10px 0;
   background-color: #f2f2f2;
   font-size: 18px;
   font-weight: bold;
@@ -34,8 +45,6 @@
   position: relative;
   cursor: pointer;
   margin-left: 80px;
-  margin-top: 10px;
-  margin-bottom: 15px;
   text-align: left;
   text-transform: none;
   font-size: 18px;
@@ -92,7 +101,6 @@ input[type="radio"]:active + .form-impression__label span {
       line-height: 1;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {

@@ -1,21 +1,32 @@
 .form-landmarks {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+  padding-top: 20px;
+  width: 320px;
+  height: 408px;
   border-bottom: solid 1px #e5e5e5;
   h3 {
+    margin: 0 auto;
     width: 240px;
+    font-size: 18px;
+    line-height: 1.4;
   }
 }
 
 .form-landmarks__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 20px;
   padding: 0;
-
+  height: 296px;
 }
 
 .form-landmarks__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .form-landmarks__input {
