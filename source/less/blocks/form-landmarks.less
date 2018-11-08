@@ -127,9 +127,6 @@ input[type="checkbox"]:active + .form-landmarks__label span {
     width: 460px;
     height: 180px;
     margin: 0 auto;
-    /*& .form-landmarks__item:nth-last-child(-n+2) {
-      margin-left: 65px;
-    }*/
   }
 
   .form-landmarks__item {
@@ -140,7 +137,6 @@ input[type="checkbox"]:active + .form-landmarks__label span {
 
 @media (min-width: @desktop-width) {
   .form-landmarks {
-    flex-direction: row;
     width: 960px;
     height: 150px;
     margin-bottom: 65px;
@@ -156,12 +152,16 @@ input[type="checkbox"]:active + .form-landmarks__label span {
   .form-landmarks__list {
     flex-direction: row;
     justify-content: space-between;
-    width: 960px;
-    height: 160px;
     margin: 0 auto;
-    & .form-landmarks__item:nth-last-child(-n+2) {
-      margin-left: 0;
-    }
+    width: 960px;
+    height: 60px;
+  }
+
+  .form-landmarks__item {
+    position: relative;
+    width: 202px;
+    height: 60px;
+    align-items: baseline;
   }
 }
 
