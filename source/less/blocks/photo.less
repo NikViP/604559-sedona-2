@@ -1,11 +1,4 @@
 .photo {
-  margin: 0 auto;
-  width: 320px;
-  padding: 22px 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.photo__centering {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -64,18 +57,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .header__photo {
-    border: 0;
-  }
-
   .photo {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    width: 324px;
+    height: 347px;
     border: 0;
-  }
-
-  .photo__centering {
-    display: none;
+    a {
+      height: 267px;
+    }
   }
 
   .photo__img {
@@ -83,13 +72,26 @@
     height: 267px;
   }
 
+  .photo--first {
+    width: 648px;
+    height: 480px;
+    a {
+      height: 400px;
+    }
+  }
+
+  .photo__img--first {
+    width: 648px;
+    height: 400px;
+  }
+
   .photo__content,
   .photo__content--first {
+    position: relative;
     justify-content: center;
     width: 324px;
     height: 80px;
     margin: 0;
-    margin-top: -4px;
     padding-left: 20px;
     padding-right: 30px;
     box-sizing: border-box;
@@ -106,18 +108,22 @@
   .photo__content--third {
     background-color: #eaeaea;
     padding-right: 36px;
+
   }
 
   .photo__icon {
     top: -5px;
-    left: 0;
+    left: -20px;
     color: #a9a9a9;
   }
 
   .photo__icon--first {
-    top: -6px;
-    left: 6px;
-    color: #a9a9a9;
+    top: -5px;
+    left: -30px;
+  }
+
+  .photo__icon--third {
+    left: -16px;
   }
 
   .photo__author {
@@ -141,14 +147,36 @@
     width: 648px;
     height: 400px;
   }
+
+  .photo__count {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+
+  .photo__count--first {
+    position: absolute;
+    top: 6px;
+    right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .photo {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo--first {
+    width: 1200px;
+    height: 400px;
+  }
+
   .photo__content,
   .photo__content--first,
   .photo__content--third {
     width: 400px;
-    margin-top: -84px;
+    margin-top: -80px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.302);
   }
@@ -176,6 +204,6 @@
   }
 
   .photo__icon--first {
-    left: 2px;
+    left: -32px;
   }
 }
