@@ -1,0 +1,21 @@
+.photo-wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-wrapper {
+    width: 1200px;
+  }
+}

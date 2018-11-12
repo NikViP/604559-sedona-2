@@ -16,43 +16,43 @@ var csso = require("gulp-csso");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("build/css"))
-    /*.pipe(server.stream())*/
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+      .pipe(plumber())
+      .pipe(less())
+      .pipe(postcss([
+        autoprefixer()
+      ]))
+      .pipe(gulp.dest("build/css"))
+      /*.pipe(server.stream())*/
+      .pipe(csso())
+      .pipe(rename("style.min.css"))
+      .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
-  .pipe(gulp.dest("source/img"));
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.svgo()
+      ]))
+      .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+      .pipe(svgstore({
+        inlineSvg: true
+      }))
+      .pipe(rename("sprite.svg"))
+      .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"));
+      .pipe(posthtml([
+        include()
+      ]))
+      .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
@@ -64,10 +64,10 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
-    ], {
+  ], {
     base: "source"
-    })
-    .pipe(gulp.dest("build"));
+  })
+      .pipe(gulp.dest("build"));
 });
 
 gulp.task("refresh", function (done) {
