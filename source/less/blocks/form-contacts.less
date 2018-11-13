@@ -18,11 +18,15 @@
   }
 }
 
+.form-contacts__title {
+  margin-bottom: 2px;
+}
+
 .form-contacts__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 190px;
+  height: 187px;
   margin: 0;
   padding: 0;
 }
@@ -72,7 +76,7 @@
 }
 
 .form-contacts__modal {
-  //display: none;
+  display: none;
   position: absolute;
   z-index: 2;
   width: 320px;
@@ -126,7 +130,7 @@
     width: 650px;
     height: 260px;
     padding: 0;
-    margin-top: 67px;
+    margin-top: 62px;
     margin-bottom: 48px;
     border-bottom: none;
   }
@@ -135,7 +139,7 @@
     display: flex;
     width: 650px;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     h3 {
       width: 290px;
       margin: 0 auto;
@@ -151,12 +155,17 @@
 
   .form-contacts__list {
     width: 650px;
-    height: 200px;
+    height: 197px;
   }
 
   .form-contacts__input {
     width: 648px;
     padding-right: 70px;
+  }
+
+  .form-contacts__icon {
+    bottom: 0;
+    right: 2px;
   }
 
   .form-contacts__label--short {
@@ -165,8 +174,7 @@
 }
 
 .form-contacts__modal {
-  //display: none;
-  display: block;
+  display: none;
   margin-left: 125px;
   width: 402px;
   height: 347px;
@@ -193,8 +201,8 @@
 @media (min-width: @desktop-width) {
   .form-contacts {
     margin: 0;
-    margin-top: 65px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 52px;
     padding: 0;
     width: 960px;
     height: 160px;
@@ -204,7 +212,7 @@
     width: 960px;
     margin-bottom: 77px;
     div {
-      width: 270px;
+      width: 280px;
     }
   }
 
@@ -260,10 +268,8 @@
     }
   }
 
-
   .form-contacts__modal {
-    //display: none;
-    display: block;
+    display: none;
     margin-left: 280px;
     top: 390px;
     box-shadow: 0 -2px 2px 0 #f2f2f2, 0 2px 2px 0 #f2f2f2;

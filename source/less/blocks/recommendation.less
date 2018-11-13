@@ -80,13 +80,19 @@
   }
 
   .recommendation__item {
+    display: block;
     margin-top: 100px;
     padding: 0;
     height: 110px;
     text-align: center;
+    h3 {
+      font-size: 21px;
+      line-height: 0.8;
+    }
     p {
       width: 158px;
       line-height: 1.5;
+      margin-top: 27px;
     }
   }
 
@@ -138,8 +144,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .recommendation {
+    height: 330px;
+  }
+
   .recommendation__list {
     width: 1200px;
+  }
+
+  .recommendation__item {
+    p {
+      width: 290px;
+    }
   }
 
   .recommendation__text {
@@ -148,5 +164,17 @@
 
   .recommendation__gap {
     display: inline-block;
+  }
+
+  .recommendation__icon--house {
+    left: 160px;
+  }
+
+  .recommendation__icon--gift {
+    left: 967px;
+  }
+
+  .recommendation__icon--burger {
+    left: 560px;
   }
 }

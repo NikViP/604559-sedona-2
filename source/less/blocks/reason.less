@@ -110,14 +110,26 @@
     }
     p {
       margin: 0;
-      line-height: 1.3;
+      width: 148px;
+      line-height: 1.4;
     }
     .reason__gap {
       display: none;
     }
-    &--narrow {
-      width: 145px;
+  }
+
+  .reason__text--first {
+    p {
+      width: 160px;
     }
+  }
+
+  .reason__number::before {
+    top: 7px;
+  }
+
+  .reason__number::after {
+    top: 7px;
   }
 }
 
@@ -132,9 +144,22 @@
       margin-top: 10px;
       line-height: 1.5;
     }
+    p {
+      width: 270px;
+    }
   }
 
   .reason__text--first {
-    width: 290px;
+    p {
+      width: 290px;
+    }
+  }
+
+  .reason__number::before {
+    top: 10px;
+  }
+
+  .reason__number::after {
+    top: 10px;
   }
 }
