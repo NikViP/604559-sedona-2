@@ -18,20 +18,23 @@
     font-size: 14px;
     line-height: 24px;
   }
-  button {
-    width: 280px;
-    height: 58px;
-    margin-top: 36px;
-    font-size: 21px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #81b3d2;
-    border: none;
-  }
   .reason__gap {
     display: none;
   }
+}
+
+.invitation__button {
+  .links-reset();
+  width: 280px;
+  height: 58px;
+  margin-top: 36px;
+  font-size: 21px;
+  line-height: 58px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,14 +52,15 @@
       font-size: 14px;
       line-height: 24px;
     }
-    button {
-      width: 458px;
-      margin-top: 43px;
-      box-sizing: border-box;
-    }
     .reason__gap {
       display: inline-block;
     }
+  }
+
+  .invitation__button {
+    width: 458px;
+    margin-top: 43px;
+    box-sizing: border-box;
   }
 }
 
@@ -66,10 +70,8 @@
     height: 330px;
   }
 
-  .invitation {
-    button {
-      margin-top: 48px;
-      text-transform: uppercase;
-    }
+  .invitation__button {
+    margin-top: 48px;
+    text-transform: uppercase;
   }
 }

@@ -149,6 +149,7 @@
       margin-top: 10px;
     }
     p {
+      width: 270px;
       line-height: 1.4;
     }
   }
@@ -172,5 +173,11 @@
 
   .reason__number--picture::after {
       top: 6px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .reason-picture__text--first span {
+      margin-top: 35px;
+    }
   }
 }
