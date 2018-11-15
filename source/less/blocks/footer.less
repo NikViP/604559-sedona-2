@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 140px;
+
   span {
     margin-right: 5px;
   }
@@ -44,15 +45,13 @@
 }
 
 .footer__link:active {
+  box-shadow: none;
+
   path {
     fill: #88b6d1;
     background-color: #5496bd;
     color: #88b6d1;
   }
-}
-
-.footer__link:active {
-  box-shadow: none;
 }
 
 .footer__link--copyright:hover {
@@ -105,7 +104,9 @@
     background-color: #669ec0;
   }
 
-  .footer__social-link:active {
+  .footer__link:active {
+    box-shadow: none;
+
     path {
       fill: #88b6d1;
       background-color: #5496bd;
@@ -113,17 +114,13 @@
     }
   }
 
-  .footer__social-link:active {
-    box-shadow: none;
-  }
-
-  .footer__copyright-link:hover {
+  .footer__link--copyright:hover {
     path {
       fill: rgb(129, 179, 210);
     }
   }
 
-  .footer__copyright-link:active {
+  .footer__link--copyright:active {
     path {
       fill: rgba(0, 0, 0, 0.302);
     }
